@@ -5,6 +5,7 @@
     <classes>
       <class name="Lab1TestNg">
         <methods>
+          <include name="withProvider" invocation-numbers="0"/>
           <include name="secondtTest"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
