@@ -5,10 +5,9 @@
     <classes>
       <class name="Lab1TestNg">
         <methods>
-          <include name="secondtTest"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="firstTest"/>
+          <include name="firstTest" invocation-numbers="1"/>
         </methods>
       </class> <!-- Lab1TestNg -->
     </classes>
