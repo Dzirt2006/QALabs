@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16059" started-at="2020-11-03T10:16:06 EST" finished-at="2020-11-03T10:16:22 EST">
+  <suite name="Default suite" duration-ms="5560" started-at="2020-11-03T11:18:12 EST" finished-at="2020-11-03T11:18:17 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16059" started-at="2020-11-03T10:16:06 EST" finished-at="2020-11-03T10:16:22 EST">
+    <test name="Default test" duration-ms="5560" started-at="2020-11-03T11:18:12 EST" finished-at="2020-11-03T11:18:17 EST">
       <class name="com.my_shopper.www.GoogleAuth">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.my_shopper.www.GoogleAuth@b9b00e0]" name="beforeMethod" is-config="true" duration-ms="15969" started-at="2020-11-03T10:16:06 EST" finished-at="2020-11-03T10:16:22 EST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.my_shopper.www.GoogleAuth@1ed6388a]" name="beforeMethod" is-config="true" duration-ms="3256" started-at="2020-11-03T11:18:12 EST" finished-at="2020-11-03T11:18:15 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.my_shopper.www.GoogleAuth@b9b00e0]" name="f" duration-ms="3" started-at="2020-11-03T10:16:22 EST" finished-at="2020-11-03T10:16:22 EST">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.my_shopper.www.GoogleAuth@1ed6388a]" name="f" duration-ms="2214" started-at="2020-11-03T11:18:15 EST" finished-at="2020-11-03T11:18:17 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.my_shopper.www.GoogleAuth@b9b00e0]" name="afterMethod" is-config="true" duration-ms="66" started-at="2020-11-03T10:16:22 EST" finished-at="2020-11-03T10:16:22 EST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.my_shopper.www.GoogleAuth@1ed6388a]" name="afterMethod" is-config="true" duration-ms="65" started-at="2020-11-03T11:18:17 EST" finished-at="2020-11-03T11:18:17 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
