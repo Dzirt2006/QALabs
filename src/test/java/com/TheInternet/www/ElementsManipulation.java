@@ -5,8 +5,7 @@ import org.openqa.selenium.WebElement;
 
 class ElementsManipulation extends BasePage implements ElementSearchers {
 //	rebuild it to interface
-	
-	
+
 	public ElementsManipulation(WebDriver driver, String url) {
 		super(url, driver);
 	}
@@ -16,7 +15,7 @@ class ElementsManipulation extends BasePage implements ElementSearchers {
 		return this;
 	}
 
-	public void click(WebElement element, int times) {
+	public ElementsManipulation click(WebElement element, int times) {
 		for (int i = 0; i < times; i++) {
 			try {
 				element.click();
@@ -24,6 +23,7 @@ class ElementsManipulation extends BasePage implements ElementSearchers {
 
 			}
 		}
+		return this;
 
 	}
 
