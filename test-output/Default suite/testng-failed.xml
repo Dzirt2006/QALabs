@@ -5,9 +5,9 @@
     <classes>
       <class name="com.TheInternet.www.TheInternet">
         <methods>
-          <include name="f"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
+          <include name="removeElements"/>
         </methods>
       </class> <!-- com.TheInternet.www.TheInternet -->
     </classes>

@@ -18,6 +18,10 @@ interface ElementSearchers {
 	default WebElement elementById(String id, WebDriver driver) {
 		return driver.findElement(By.id(id));
 	}
+	
+	default WebElement elementByClass(String className, WebDriver driver) {
+		return driver.findElement(By.className(className));
+	}
 
 	default List<WebElement> elementsByXpath(String xpath, WebDriver driver) {
 		return driver.findElements(By.xpath(xpath));

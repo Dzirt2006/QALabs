@@ -32,6 +32,18 @@ class AddRemoveElements extends ElementsManipulation {
 		super.click(button, clicks);
 		return this;
 	}
+//polish it
+	public AddRemoveElements clickDeleteButton(String elementByXpath, int clicks) {
+		for (int i = 0; i < clicks; i++) {
+			try {
+				WebElement button = this.elementByXpath(elementByXpath, driver);
+				button.click();
+			} catch (Exception e) {
+
+			}
+		}
+		return this;
+	}
 
 	public int elementsCount(String deleteButtconClassName) {
 		return this.elementsByClass(deleteButtconClassName, driver).size();
