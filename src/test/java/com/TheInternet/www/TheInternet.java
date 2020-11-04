@@ -35,14 +35,6 @@ public class TheInternet {
 		String urlDirect = "/add_remove_elements/";
 		String deleteButtconClassName = "added-manually";
 		int clicks = 10;
-
-//		
-//		ElementsManipulation addRemovePage = new ElementsManipulation(driver, BaseUrl).navigateTo(urlDirect); //page instance
-//		
-//		WebElement addEleButton = addRemovePage.elementByXpath(addElementXPath, driver);//get the button
-//		
-//		addRemovePage.click(addEleButton, 10);
-//		int elementCount = addRemovePage.elementsByClass(deleteButtconClassName, driver).size();
 		int elementCount = new AddRemoveElements(driver, BaseUrl).navigateTo(urlDirect)
 				.clickButton(addElementXPath, clicks).elementsCount(deleteButtconClassName);
 		Assert.assertEquals(elementCount, clicks);
