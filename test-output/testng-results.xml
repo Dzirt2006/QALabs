@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5560" started-at="2020-11-03T11:18:12 EST" finished-at="2020-11-03T11:18:17 EST">
+  <suite name="Default suite" duration-ms="2614" started-at="2020-11-04T15:46:06 EST" finished-at="2020-11-04T15:46:09 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5560" started-at="2020-11-03T11:18:12 EST" finished-at="2020-11-03T11:18:17 EST">
-      <class name="com.my_shopper.www.GoogleAuth">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.my_shopper.www.GoogleAuth@1ed6388a]" name="beforeMethod" is-config="true" duration-ms="3256" started-at="2020-11-03T11:18:12 EST" finished-at="2020-11-03T11:18:15 EST">
+    <test name="Default test" duration-ms="2614" started-at="2020-11-04T15:46:06 EST" finished-at="2020-11-04T15:46:09 EST">
+      <class name="com.TheInternet.www.TheInternet">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="beforeMethod" is-config="true" duration-ms="694" started-at="2020-11-04T15:46:06 EST" finished-at="2020-11-04T15:46:07 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.my_shopper.www.GoogleAuth@1ed6388a]" name="f" duration-ms="2214" started-at="2020-11-03T11:18:15 EST" finished-at="2020-11-03T11:18:17 EST">
+        <test-method status="PASS" signature="addRemoveElements()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="addRemoveElements" duration-ms="1903" started-at="2020-11-04T15:46:07 EST" finished-at="2020-11-04T15:46:09 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.my_shopper.www.GoogleAuth@1ed6388a]" name="afterMethod" is-config="true" duration-ms="65" started-at="2020-11-03T11:18:17 EST" finished-at="2020-11-03T11:18:17 EST">
+        </test-method> <!-- addRemoveElements -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-11-04T15:46:09 EST" finished-at="2020-11-04T15:46:09 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.my_shopper.www.GoogleAuth -->
+      </class> <!-- com.TheInternet.www.TheInternet -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.my_shopper.www.GoogleAuth">
+      <class name="com.TheInternet.www.TheInternet">
         <methods>
+          <include name="f"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="f"/>
         </methods>
-      </class> <!-- com.my_shopper.www.GoogleAuth -->
+      </class> <!-- com.TheInternet.www.TheInternet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
