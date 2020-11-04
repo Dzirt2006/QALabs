@@ -30,14 +30,31 @@ public class TheInternet {
 	}
 
 	@Test
-	public void addRemoveElements() {
+	public void addElements() {
 		String addElementXPath = "//div[@id='content']//button[.='Add Element']";
 		String urlDirect = "/add_remove_elements/";
 		String deleteButtconClassName = "added-manually";
 		int clicks = 10;
 		int elementCount = new AddRemoveElements(driver, BaseUrl).navigateTo(urlDirect)
 				.clickButton(addElementXPath, clicks).elementsCount(deleteButtconClassName);
+		System.out.println(elementCount);
 		Assert.assertEquals(elementCount, clicks);
+	}
+
+	@Test
+	public void removeElements() {
+		String urlDirect = "/add_remove_elements/";
+		String addElementXPath = "//div[@id='content']//button[.='Add Element']";
+		String deleteButtonClicks = "//div[@id='elements']/button[1]";
+		String deleteButtonCount = "added-manually";
+
+		int addClicks = 10;
+		int deleteClicks = 8;
+		int elementCount = new AddRemoveElements(driver, BaseUrl).navigateTo(urlDirect)
+				.clickButton(addElementXPath, addClicks).clickDeleteButton(deleteButtonClicks, deleteClicks)
+				.elementsCount(deleteButtonCount);
+		Assert.assertEquals(elementCount, addClicks - deleteClicks);
+
 	}
 
 	@BeforeMethod
