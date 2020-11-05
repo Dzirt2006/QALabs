@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1455" started-at="2020-11-04T17:15:15 EST" finished-at="2020-11-04T17:15:17 EST">
+  <suite name="Default suite" duration-ms="1325" started-at="2020-11-05T12:49:04 EST" finished-at="2020-11-05T12:49:05 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1455" started-at="2020-11-04T17:15:15 EST" finished-at="2020-11-04T17:15:17 EST">
+    <test name="Default test" duration-ms="1325" started-at="2020-11-05T12:49:04 EST" finished-at="2020-11-05T12:49:05 EST">
       <class name="com.TheInternet.www.TheInternet">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="beforeMethod" is-config="true" duration-ms="654" started-at="2020-11-04T17:15:15 EST" finished-at="2020-11-04T17:15:16 EST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="beforeMethod" is-config="true" duration-ms="671" started-at="2020-11-05T12:49:04 EST" finished-at="2020-11-05T12:49:04 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="removeElements()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="removeElements" duration-ms="785" started-at="2020-11-04T17:15:16 EST" finished-at="2020-11-04T17:15:17 EST">
+        <test-method status="PASS" signature="inputNumber()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="inputNumber" duration-ms="582" started-at="2020-11-05T12:49:04 EST" finished-at="2020-11-05T12:49:05 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- removeElements -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-11-04T17:15:17 EST" finished-at="2020-11-04T17:15:17 EST">
+        </test-method> <!-- inputNumber -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="afterMethod" is-config="true" duration-ms="56" started-at="2020-11-05T12:49:05 EST" finished-at="2020-11-05T12:49:05 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

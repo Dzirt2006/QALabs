@@ -21,11 +21,9 @@ public class TheInternet {
 
 	@Test
 	public void dropdown() {
-		String dropdownId = "dropdown";
-		String urlDirect = "/dropdown";
 		String optionForSelect = "Option 2";
-		String currentOption = new DropDownManipulations(driver, BaseUrl).navigateTo(urlDirect)
-				.selectOptionByText(optionForSelect, dropdownId).getSelectedOption(dropdownId);
+		String currentOption = new DropdownListPage(driver, BaseUrl).navigateTo().selectOptionByText(optionForSelect)
+				.getSelectedOption();
 		Assert.assertEquals(currentOption, optionForSelect);
 	}
 
@@ -35,8 +33,8 @@ public class TheInternet {
 		String urlDirect = "/add_remove_elements/";
 		String deleteButtconClassName = "added-manually";
 		int clicks = 10;
-		int elementCount = new AddRemoveElements(driver, BaseUrl).navigateTo(urlDirect)
-				.clickButton(addElementXPath, clicks).elementsCount(deleteButtconClassName);
+		int elementCount = new AddElements(driver, BaseUrl).navigateTo()
+				.clickButton(clicks).elementsCount();
 		System.out.println(elementCount);
 		Assert.assertEquals(elementCount, clicks);
 	}
@@ -50,11 +48,18 @@ public class TheInternet {
 
 		int addClicks = 10;
 		int deleteClicks = 8;
-		int elementCount = new AddRemoveElements(driver, BaseUrl).navigateTo(urlDirect)
-				.clickButton(addElementXPath, addClicks).clickDeleteButton(deleteButtonClicks, deleteClicks)
-				.elementsCount(deleteButtonCount);
+		int elementCount = new AddRemoveElements(driver, BaseUrl).navigateTo()
+				.clickButton( addClicks).clickDeleteButton(deleteClicks)
+				.elementsCount();
 		Assert.assertEquals(elementCount, addClicks - deleteClicks);
 
+	}
+	
+	@Test
+	public void inputNumber() {
+		int number=10;
+		int currentNum= new InputPage(driver,BaseUrl).navigateTo().selectElement()
+				.setInputData(number).getDataFromInputField();
 	}
 
 	@BeforeMethod
@@ -64,7 +69,7 @@ public class TheInternet {
 
 	@AfterMethod
 	public void afterMethod() {
-//		driver.close();
+		driver.close();
 	}
 
 }
