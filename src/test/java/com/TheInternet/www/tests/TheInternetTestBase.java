@@ -16,7 +16,9 @@ public class TheInternetTestBase {
 
 	@AfterMethod
 	public void afterMethod() {
-		driver.close();
+//		driver.close();
 	}
+	
+	
 
 }
