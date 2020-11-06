@@ -23,6 +23,14 @@ public interface ElementSearchers {
 		return driver.findElement(By.className(className));
 	}
 
+	default WebElement elementByTag(String tag, WebDriver driver) {
+		return driver.findElement(By.tagName(tag));
+	}
+
+	default WebElement elementByTag(String tag, WebElement element) {
+		return element.findElement(By.tagName(tag));
+	}
+
 	default List<WebElement> elementsByXpath(String xpath, WebDriver driver) {
 		return driver.findElements(By.xpath(xpath));
 	}
