@@ -1,7 +1,9 @@
-package com.TheInternet.www;
+package com.TheInternet.www.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import com.TheInternet.www.frameworks.InputField;
 
 public class InputPage extends InputField {
 	private final String xpath = "/html//div[@id='content']//input[@type='number']";
@@ -14,7 +16,7 @@ public class InputPage extends InputField {
 	}
 
 	@Override
-	InputPage navigateTo() {
+	public InputPage navigateTo() {
 		super.navigateTo(this.url);
 		return this;
 	}

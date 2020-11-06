@@ -1,7 +1,9 @@
-package com.TheInternet.www;
+package com.TheInternet.www.frameworks;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import com.TheInternet.www.pages.BasePage;
 
 public abstract class InputField extends BasePage implements ElementSearchers {
 
@@ -9,7 +11,7 @@ public abstract class InputField extends BasePage implements ElementSearchers {
 		super(url, driver);
 	}
 
-	abstract InputField navigateTo();
+	public abstract InputField navigateTo();
 
 	public void setText(WebElement mappedElement, String expectedInput) {
 		mappedElement.sendKeys(expectedInput);

@@ -1,9 +1,11 @@
-package com.TheInternet.www;
+package com.TheInternet.www.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-class AddRemoveElements extends ElementsManipulation{
+import com.TheInternet.www.frameworks.ElementsManipulation;
+
+public class AddRemoveElements extends ElementsManipulation{
 
 	String urlDirect = "/add_remove_elements/";
 	String addElementXPath = "//div[@id='content']//button[.='Add Element']";

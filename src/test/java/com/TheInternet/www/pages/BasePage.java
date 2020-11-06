@@ -1,4 +1,4 @@
-package com.TheInternet.www;
+package com.TheInternet.www.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

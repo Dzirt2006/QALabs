@@ -1,7 +1,9 @@
-package com.TheInternet.www;
+package com.TheInternet.www.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+
+import com.TheInternet.www.frameworks.DropDownManipulations;
 
 public class DropdownListPage extends DropDownManipulations {
 
