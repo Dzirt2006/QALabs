@@ -1,8 +1,8 @@
-package com.TheInternet.www;
+package com.TheInternet.www.pages;
 
 import org.openqa.selenium.WebDriver;
 
-class IndexPage extends BasePage{
+public class IndexPage extends BasePage{
 
 	public IndexPage(WebDriver driver,String url) {
 		super(url,driver);

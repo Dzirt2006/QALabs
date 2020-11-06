@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1455" started-at="2020-11-04T17:15:15 EST" finished-at="2020-11-04T17:15:17 EST">
+  <suite name="Default suite" duration-ms="2666" started-at="2020-11-05T20:49:26 EST" finished-at="2020-11-05T20:49:29 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1455" started-at="2020-11-04T17:15:15 EST" finished-at="2020-11-04T17:15:17 EST">
-      <class name="com.TheInternet.www.TheInternet">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="beforeMethod" is-config="true" duration-ms="654" started-at="2020-11-04T17:15:15 EST" finished-at="2020-11-04T17:15:16 EST">
+    <test name="Default test" duration-ms="2666" started-at="2020-11-05T20:49:26 EST" finished-at="2020-11-05T20:49:29 EST">
+      <class name="com.TheInternet.www.tests.AddRemove">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.tests.AddRemove@76707e36]" name="beforeMethod" is-config="true" duration-ms="694" started-at="2020-11-05T20:49:26 EST" finished-at="2020-11-05T20:49:27 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="removeElements()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="removeElements" duration-ms="785" started-at="2020-11-04T17:15:16 EST" finished-at="2020-11-04T17:15:17 EST">
+        <test-method status="PASS" signature="addElements()[pri:0, instance:com.TheInternet.www.tests.AddRemove@76707e36]" name="addElements" duration-ms="588" started-at="2020-11-05T20:49:27 EST" finished-at="2020-11-05T20:49:28 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- removeElements -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.TheInternet@614ddd49]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-11-04T17:15:17 EST" finished-at="2020-11-04T17:15:17 EST">
+        </test-method> <!-- addElements -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.tests.AddRemove@76707e36]" name="afterMethod" is-config="true" duration-ms="53" started-at="2020-11-05T20:49:28 EST" finished-at="2020-11-05T20:49:28 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.TheInternet.www.TheInternet -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.tests.AddRemove@76707e36]" name="beforeMethod" is-config="true" duration-ms="409" started-at="2020-11-05T20:49:28 EST" finished-at="2020-11-05T20:49:28 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="addremoveElements()[pri:0, instance:com.TheInternet.www.tests.AddRemove@76707e36]" name="addremoveElements" duration-ms="847" started-at="2020-11-05T20:49:28 EST" finished-at="2020-11-05T20:49:29 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addremoveElements -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.tests.AddRemove@76707e36]" name="afterMethod" is-config="true" duration-ms="54" started-at="2020-11-05T20:49:29 EST" finished-at="2020-11-05T20:49:29 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.TheInternet.www.tests.AddRemove -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

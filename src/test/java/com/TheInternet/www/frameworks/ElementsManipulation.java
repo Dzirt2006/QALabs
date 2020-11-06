@@ -1,9 +1,11 @@
-package com.TheInternet.www;
+package com.TheInternet.www.frameworks;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-class ElementsManipulation extends BasePage implements ElementSearchers {
+import com.TheInternet.www.pages.BasePage;
+
+public class ElementsManipulation extends BasePage implements ElementSearchers {
 //	rebuild it to interface
 
 	public ElementsManipulation(WebDriver driver, String url) {
