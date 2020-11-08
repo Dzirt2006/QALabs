@@ -13,9 +13,9 @@ public abstract class Table extends BasePage implements ElementSearchers {
 		super(url, driver);
 	}
 
-	public abstract Table navigateTo();
+	protected abstract Table navigateTo();
 
-	public Map<String, ArrayList<String>> getAllDataFromTheTable(WebElement table) {
+	protected Map<String, ArrayList<String>> getAllDataFromTheTable(WebElement table) {
 		Map<String, ArrayList<String>> tableObject = new HashMap<String, ArrayList<String>>();
 		String[] headerData = getDataFromTheHeader(table, "th");
 		List<WebElement> bodyElement = getTBody(table);
@@ -41,16 +41,16 @@ public abstract class Table extends BasePage implements ElementSearchers {
 		return tableObject;
 	}
 
-	public WebElement getTableElementById(String id) {
+	protected WebElement getTableElementById(String id) {
 		return elementById(id, driver);
 	}
 
-	public List<WebElement> getHeader(WebElement element) {
+	protected List<WebElement> getHeader(WebElement element) {
 		String headerTag = "th";
 		return elementsByTag(headerTag, element);
 	}
 
-	public String[] getDataFromTheHeader(WebElement element, String tag) {
+	protected String[] getDataFromTheHeader(WebElement element, String tag) {
 		List<WebElement> elements = new ArrayList<>(this.elementsByTag(tag, element));
 		String[] finalData = new String[elements.size()];
 		Iterator<WebElement> iterator = elements.iterator();
@@ -62,20 +62,25 @@ public abstract class Table extends BasePage implements ElementSearchers {
 		return finalData;
 	}
 
-	public List<WebElement> getTBody(WebElement table) {
+	protected List<WebElement> getTBody(WebElement table) {
 		String tagname = "tbody";
 		String tabInTBody = "td";
 		WebElement tbody = elementByTag(tagname, table);
 		return elementsByTag(tabInTBody, tbody);
 	}
 
-	public String getRow(Map<String, ArrayList<String>> map, int index) {
+	protected String getRow(Map<String, ArrayList<String>> map, int index) {
 		String result = "";
 		for (Map.Entry<String, ArrayList<String>> entry : map.entrySet()) {
 			result += entry.getKey() + ": " + entry.getValue().get(index) + " ";
 		}
 
 		return result.trim();
+	}
+
+	protected void clickOnHeader(WebElement table, String headerText) {
+		String xpath = "//span[.='" + headerText + "']";
+		elementByXpath(xpath, table).click();
 	}
 
 }

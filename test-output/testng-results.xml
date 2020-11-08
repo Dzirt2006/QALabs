@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1248" started-at="2020-11-07T16:52:44 EST" finished-at="2020-11-07T16:52:45 EST">
+  <suite name="Default suite" duration-ms="1881" started-at="2020-11-07T20:27:09 EST" finished-at="2020-11-07T20:27:11 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1248" started-at="2020-11-07T16:52:44 EST" finished-at="2020-11-07T16:52:45 EST">
-      <class name="com.TheInternet.www.tests.Checkboxes">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.tests.Checkboxes@1f554b06]" name="beforeMethod" is-config="true" duration-ms="679" started-at="2020-11-07T16:52:44 EST" finished-at="2020-11-07T16:52:45 EST">
+    <test name="Default test" duration-ms="1881" started-at="2020-11-07T20:27:09 EST" finished-at="2020-11-07T20:27:11 EST">
+      <class name="com.TheInternet.www.tests.Tables">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.tests.Tables@1f554b06]" name="beforeMethod" is-config="true" duration-ms="673" started-at="2020-11-07T20:27:09 EST" finished-at="2020-11-07T20:27:10 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkbox()[pri:0, instance:com.TheInternet.www.tests.Checkboxes@1f554b06]" name="checkbox" duration-ms="497" started-at="2020-11-07T16:52:45 EST" finished-at="2020-11-07T16:52:45 EST">
+        <test-method status="PASS" signature="inputNumber()[pri:0, instance:com.TheInternet.www.tests.Tables@1f554b06]" name="inputNumber" duration-ms="1139" started-at="2020-11-07T20:27:10 EST" finished-at="2020-11-07T20:27:11 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkbox -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.tests.Checkboxes@1f554b06]" name="afterMethod" is-config="true" duration-ms="56" started-at="2020-11-07T16:52:45 EST" finished-at="2020-11-07T16:52:45 EST">
+        </test-method> <!-- inputNumber -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.tests.Tables@1f554b06]" name="afterMethod" is-config="true" duration-ms="53" started-at="2020-11-07T20:27:11 EST" finished-at="2020-11-07T20:27:11 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.TheInternet.www.tests.Checkboxes -->
+      </class> <!-- com.TheInternet.www.tests.Tables -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
