@@ -22,7 +22,8 @@ public class CheckboxManipulations extends BasePage implements ElementSearchers 
 	}
 	
 	/**
-	 * code for browser	
+	 * 
+	code for browser	
 	const nodeElements=$x("//form")[0].childNodes 
 	const func = (x) => {
 	    for (const key in nodeElements) {

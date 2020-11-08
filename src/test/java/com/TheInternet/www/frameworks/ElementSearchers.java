@@ -11,6 +11,10 @@ public interface ElementSearchers {
 		return driver.findElement(By.xpath(xpath));
 	}
 
+	default WebElement elementByXpath(String xpath, WebElement element) {
+		return element.findElement(By.xpath(xpath));
+	}
+
 	default WebElement elementByCss(String cssSel, WebDriver driver) {
 		return driver.findElement(By.cssSelector(cssSel));
 	}

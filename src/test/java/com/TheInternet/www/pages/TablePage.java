@@ -11,7 +11,9 @@ import com.TheInternet.www.frameworks.Table;
 public class TablePage extends Table {
 	String url = "/tables";
 	String tableId = "table1";
+	String sortedColumn = "First Name";
 	Map<String, ArrayList<String>> tableObject;
+	WebElement table1;
 
 	public TablePage(WebDriver driver, String url) {
 		super(driver, url);
@@ -23,16 +25,24 @@ public class TablePage extends Table {
 		return this;
 	}
 
+	public TablePage getTable() {
+		table1 = getTableElementById(tableId);
+		System.out.println(table1);
+		return this;
+	}
+
 	public TablePage getAllDataFromTheTable() {
-		WebElement table1 = getTableElementById(tableId);
 		tableObject = getAllDataFromTheTable(table1);
 		return this;
 	}
-	
+
 	public String getRow(int index) {
 		return super.getRow(tableObject, index);
 	}
-	
-	
+
+	public TablePage clickOnHeader() {
+		super.clickOnHeader(table1, sortedColumn);
+		return this;
+	}
 
 }
