@@ -34,6 +34,7 @@ public class ContextMenuPage extends AlertBox implements MouseActions, ElementSe
 
 	public boolean isAlert() {
 		Alert alert = super.switchToAlert();
+		alert.accept();
 		return alert == null ? false : true;
 	}
 
