@@ -23,6 +23,12 @@ public class DisappearingElementsPage extends BasePage implements ElementSearche
 	}
 
 	public DisappearingElementsPage getAllButtons() {
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		buttons = elementsByXpath(xpath, driver);
 		return this;
 	}
@@ -30,7 +36,7 @@ public class DisappearingElementsPage extends BasePage implements ElementSearche
 	public int getAmountOfButtons() {
 		return elementsByXpath(xpath, driver).size();
 	}
-	
+
 	public DisappearingElementsPage refresh() {
 		super.refresh();
 		return this;

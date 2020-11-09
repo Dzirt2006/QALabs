@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5684" started-at="2020-11-09T18:15:47 EST" finished-at="2020-11-09T18:15:52 EST">
+  <suite name="Default suite" duration-ms="1271" started-at="2020-11-09T18:18:48 EST" finished-at="2020-11-09T18:18:49 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5684" started-at="2020-11-09T18:15:47 EST" finished-at="2020-11-09T18:15:52 EST">
-      <class name="com.TheInternet.www.tests.EntryAdd">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.tests.EntryAdd@1f554b06]" name="beforeMethod" is-config="true" duration-ms="686" started-at="2020-11-09T18:15:47 EST" finished-at="2020-11-09T18:15:47 EST">
+    <test name="Default test" duration-ms="1271" started-at="2020-11-09T18:18:48 EST" finished-at="2020-11-09T18:18:49 EST">
+      <class name="com.TheInternet.www.tests.DisappearingElements">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TheInternet.www.tests.DisappearingElements@76707e36]" name="beforeMethod" is-config="true" duration-ms="679" started-at="2020-11-09T18:18:48 EST" finished-at="2020-11-09T18:18:48 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="home()[pri:0, instance:com.TheInternet.www.tests.EntryAdd@1f554b06]" name="home" duration-ms="4926" started-at="2020-11-09T18:15:47 EST" finished-at="2020-11-09T18:15:52 EST">
+        <test-method status="PASS" signature="portfolio()[pri:0, instance:com.TheInternet.www.tests.DisappearingElements@76707e36]" name="portfolio" duration-ms="521" started-at="2020-11-09T18:18:48 EST" finished-at="2020-11-09T18:18:49 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- home -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.tests.EntryAdd@1f554b06]" name="afterMethod" is-config="true" duration-ms="55" started-at="2020-11-09T18:15:52 EST" finished-at="2020-11-09T18:15:52 EST">
+        </test-method> <!-- portfolio -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TheInternet.www.tests.DisappearingElements@76707e36]" name="afterMethod" is-config="true" duration-ms="54" started-at="2020-11-09T18:18:49 EST" finished-at="2020-11-09T18:18:49 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.TheInternet.www.tests.EntryAdd -->
+      </class> <!-- com.TheInternet.www.tests.DisappearingElements -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
