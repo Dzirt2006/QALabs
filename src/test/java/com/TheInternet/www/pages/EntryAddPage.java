@@ -8,7 +8,9 @@ import javax.swing.text.html.HTMLDocument.Iterator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class EntryAddPage extends BasePage {
+import com.TheInternet.www.frameworks.ElementSearchers;
+
+public class EntryAddPage extends BasePage implements ElementSearchers {
 	public EntryAddPage(String url, WebDriver driver) {
 		super(url, driver);
 		// TODO Auto-generated constructor stub
@@ -21,27 +23,16 @@ public class EntryAddPage extends BasePage {
 		super.navigateTo(redirect);
 		return this;
 	}
-	
-	public EntryAddPage getAllWindows() {
-		String originalWindowHandle = driver.getWindowHandle();
-		System.out.println("original Window handles are: " + originalWindowHandle);
-		System.out.println("Title of original Page:" + driver.getTitle());  
-		java.util.Set<java.lang.String> windowHandles = driver.getWindowHandles();
-		System.out.println(windowHandles);
-		int count = windowHandles.size();
-		//if (count > 1) {
-		for (String window: windowHandles) {
-		    if(!window.equals(originalWindowHandle)){
-		        driver.switchTo().window(window);
-		        String url = driver.getCurrentUrl();
-		        System.out.println("current url is: " + url);        
-		    }  
-		    //to go back to original    
-		    driver.switchTo().window(originalWindowHandle); 
 
-		} 
-		System.out.println(count);
+	public EntryAddPage refresh() {
+		// TODO Auto-generated method stub
+		super.refresh();
 		return this;
 	}
-	
+
+	public EntryAddPage getAllWindows() {
+		
+		return this;
+	}
+
 }

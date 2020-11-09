@@ -8,9 +8,9 @@ import com.TheInternet.www.pages.EntryAddPage;
 
 public class EntryAdd extends TheInternetTestBase {
 
-	@Test
-	public void home() {
-		new EntryAddPage(BaseUrl, driver).navigateTo().getAllWindows();
-	}
+//	@Test
+//	public void home() {
+//		new EntryAddPage(BaseUrl, driver).navigateTo().getAllWindows();
+//	}
 
 }

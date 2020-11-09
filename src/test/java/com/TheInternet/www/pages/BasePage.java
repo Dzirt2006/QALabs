@@ -15,7 +15,7 @@ public abstract class BasePage {
 
 	public BasePage navigateTo(String url) {
 		driver.get(this.baseUrl + url);
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		return this;
 	}
 

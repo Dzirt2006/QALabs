@@ -9,8 +9,8 @@ import com.TheInternet.www.pages.CheckboxPage;
 public class AlertLogin extends TheInternetTestBase{
 
 
-	@Test
-	public void checkbox() {
-//		new ContextMenuPage(BaseUrl, driver).navigateTo().getAll();
-	}
+//	@Test
+//	public void checkbox() {
+////		new ContextMenuPage(BaseUrl, driver).navigateTo().getAll();
+//	}
 }
