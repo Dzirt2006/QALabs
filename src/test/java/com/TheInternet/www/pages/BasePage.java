@@ -15,6 +15,7 @@ public abstract class BasePage {
 
 	public BasePage navigateTo(String url) {
 		driver.get(this.baseUrl + url);
+//		driver.manage().window().maximize();
 		return this;
 	}
 
@@ -25,6 +26,16 @@ public abstract class BasePage {
 	public String getTitle() {
 		return driver.getTitle();
 	}
+
+	public String getUrl() {
+		return driver.getCurrentUrl();
+	}
+
+	public BasePage refresh() {
+		driver.navigate().refresh();
+		return this;
+	}
+
 //	default String getSessionId(String uri) {
 //		return HttpSessionId.getSessionId(uri);	
 //	}
