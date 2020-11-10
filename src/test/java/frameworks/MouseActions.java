@@ -25,7 +25,6 @@ public interface MouseActions {
 			robot = new Robot();
 			robot.mouseMove(600, 100);
 		} catch (AWTException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -37,7 +36,6 @@ public interface MouseActions {
 			robot = new Robot();
 			robot.mouseMove(600, 600);
 		} catch (AWTException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
