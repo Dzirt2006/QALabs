@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TheInternet.www.tests.EntryAdd">
+      <class name="com.TheInternet.www.tests.ExitIntent">
         <methods>
           <include name="afterMethod"/>
+          <include name="dropdown"/>
           <include name="beforeMethod"/>
-          <include name="home"/>
         </methods>
-      </class> <!-- com.TheInternet.www.tests.EntryAdd -->
+      </class> <!-- com.TheInternet.www.tests.ExitIntent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

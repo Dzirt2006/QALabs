@@ -1,5 +1,8 @@
 package com.TheInternet.www.frameworks;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -17,8 +20,27 @@ public interface MouseActions {
 	}
 
 	default void moveMouseToVeiwportPane(WebDriver driver) {
-		Actions action = new Actions(driver);
-		action.moveByOffset(600, -1).build().perform();
+		Robot robot;
+		try {
+			robot = new Robot();
+			robot.mouseMove(600, 100);
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	default void moveMouseOnPage(WebDriver driver) {
+		Robot robot;
+		try {
+			robot = new Robot();
+			robot.mouseMove(600, 600);
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 
 	// drag and drop
@@ -44,18 +66,11 @@ public interface MouseActions {
 
 //		new Actions(driver).dragAndDrop(from, to).build().perform();
 
+		// mouse release doen't work in chrome
 		Actions builder = new Actions(driver);
-		Action dragAndDrop = builder.clickAndHold(from).moveByOffset(xOffset, yOffset + 100).moveToElement(to)
-				.release(to).build();
-
-		try {
-			Thread.sleep(500);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Action dragAndDrop = builder.clickAndHold(from).moveByOffset(xOffset, yOffset + 100).moveToElement(to).release()
+				.build();
 		dragAndDrop.perform();
-
 	}
 
 }

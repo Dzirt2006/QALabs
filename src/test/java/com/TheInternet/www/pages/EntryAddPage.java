@@ -5,11 +5,9 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.TheInternet.www.frameworks.BasePage;
-import com.TheInternet.www.frameworks.ElementSearchers;
 import com.TheInternet.www.frameworks.ModalWindow;
 
-public class EntryAddPage extends ModalWindow{
+public class EntryAddPage extends ModalWindow {
 	String closeXPath = "//p[.='Close']";
 	String clickable = "//a[@id='restart-ad']";
 

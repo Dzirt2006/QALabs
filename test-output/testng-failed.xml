@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test thread-count="5" name="Unit1(failed)">
     <classes>
-      <class name="com.TheInternet.www.tests.EntryAdd">
+      <class name="com.TheInternet.www.tests.DragNDrop">
         <methods>
           <include name="afterMethod"/>
+          <include name="checkbox"/>
           <include name="beforeMethod"/>
-          <include name="home"/>
         </methods>
-      </class> <!-- com.TheInternet.www.tests.EntryAdd -->
+      </class> <!-- com.TheInternet.www.tests.DragNDrop -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Unit1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

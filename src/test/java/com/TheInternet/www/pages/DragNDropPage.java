@@ -32,6 +32,7 @@ public class DragNDropPage extends BasePage implements MouseActions, ElementSear
 	}
 
 	public String getAHeader() {
+		sleep(1000);
 		return elementByXpath(aHeader, driver).getText();
 	}
 
