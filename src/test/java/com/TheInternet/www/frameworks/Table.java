@@ -5,8 +5,6 @@ import java.util.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.TheInternet.www.pages.BasePage;
-
 public abstract class Table extends BasePage implements ElementSearchers {
 
 	public Table(WebDriver driver, String url) {
@@ -74,8 +72,11 @@ public abstract class Table extends BasePage implements ElementSearchers {
 		for (Map.Entry<String, ArrayList<String>> entry : map.entrySet()) {
 			result += entry.getKey() + ": " + entry.getValue().get(index) + " ";
 		}
-
 		return result.trim();
+	}
+
+	protected String getCell(Map<String, ArrayList<String>> map, int rowIndex, String columnName) {
+		return map.get(columnName).get(rowIndex);
 	}
 
 	protected void clickOnHeader(WebElement table, String headerText) {

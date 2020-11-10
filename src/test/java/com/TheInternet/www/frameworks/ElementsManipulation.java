@@ -3,8 +3,6 @@ package com.TheInternet.www.frameworks;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.TheInternet.www.pages.BasePage;
-
 public class ElementsManipulation extends BasePage implements ElementSearchers {
 //	rebuild it to interface
 

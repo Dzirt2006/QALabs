@@ -40,8 +40,18 @@ public interface MouseActions {
 //		new Actions(driver).dragAndDrop(from, to).build().perform();
 
 		Actions builder = new Actions(driver);
-		Action dragAndDrop = builder.clickAndHold(from).moveByOffset(xOffset, yOffset + 100).moveToElement(to).release(to).build();
+		Action dragAndDrop = builder.clickAndHold(from)
+				.moveByOffset(xOffset, yOffset + 100).moveToElement(to).release(to).build();
+		
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		dragAndDrop.perform();
+
+		
 
 	}
 

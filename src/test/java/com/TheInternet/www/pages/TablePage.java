@@ -45,4 +45,9 @@ public class TablePage extends Table {
 		return this;
 	}
 
+	public TablePage getCell() {
+		System.out.println(super.getCell(tableObject, 2, sortedColumn));
+		return this;
+	}
+
 }

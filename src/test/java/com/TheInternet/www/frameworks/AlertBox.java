@@ -3,8 +3,6 @@ package com.TheInternet.www.frameworks;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 
-import com.TheInternet.www.pages.BasePage;
-
 public class AlertBox extends BasePage{
 
 	

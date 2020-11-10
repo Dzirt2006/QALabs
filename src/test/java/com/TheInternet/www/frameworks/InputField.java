@@ -3,8 +3,6 @@ package com.TheInternet.www.frameworks;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import com.TheInternet.www.pages.BasePage;
-
 public abstract class InputField extends BasePage implements ElementSearchers {
 
 	public InputField(WebDriver driver, String url) {

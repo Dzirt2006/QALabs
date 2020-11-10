@@ -8,10 +8,11 @@ import com.TheInternet.www.pages.TablePage;
 public class Tables extends TheInternetTestBase {
 	@Test
 	public void inputNumber() {
-		int number = 10;
-		String row0 = new TablePage(driver, BaseUrl).navigateTo().getTable().getAllDataFromTheTable().getRow(0);
-		String sorted = new TablePage(driver, BaseUrl).navigateTo().getTable().clickOnHeader().getAllDataFromTheTable()
+		TablePage tableP=new TablePage(driver, BaseUrl);
+		String row0 = tableP.navigateTo().getTable().getAllDataFromTheTable().getRow(0);
+		String sorted = tableP.clickOnHeader().getAllDataFromTheTable()
 				.getRow(0);
+		tableP.getCell();
 
 		Assert.assertNotEquals(row0, sorted);
 

@@ -5,31 +5,30 @@ import org.openqa.selenium.WebElement;
 
 import com.TheInternet.www.frameworks.ElementsManipulation;
 
-public class AddRemoveElements extends ElementsManipulation{
+public class AddRemoveElementsPage extends ElementsManipulation {
 
 	String urlDirect = "/add_remove_elements/";
 	String addElementXPath = "//div[@id='content']//button[.='Add Element']";
 	String deleteButtonClicks = "//div[@id='elements']/button[1]";
 	String deleteButtonClassName = "added-manually";
-	
 
-	public AddRemoveElements(WebDriver driver, String url) {
+	public AddRemoveElementsPage(WebDriver driver, String url) {
 		super(driver, url);
 	}
 
-	public AddRemoveElements navigateTo() {
+	public AddRemoveElementsPage navigateTo() {
 		super.navigateTo(this.urlDirect);
 		return this;
 	}
 
-
-	public AddRemoveElements clickButton(int clicks) {
+	public AddRemoveElementsPage clickButton(int clicks) {
 		WebElement button = this.elementByXpath(this.addElementXPath, driver);
 		super.click(button, clicks);
 		return this;
 	}
+
 //polish it
-	public AddRemoveElements clickDeleteButton(int clicks) {
+	public AddRemoveElementsPage clickDeleteButton(int clicks) {
 		for (int i = 0; i < clicks; i++) {
 			try {
 				WebElement button = this.elementByXpath(this.deleteButtonClicks, driver);
@@ -42,8 +41,7 @@ public class AddRemoveElements extends ElementsManipulation{
 	}
 
 	public int elementsCount() {
-		return this.elementsByClass(this.deleteButtonClassName, driver).size();
+		return elementsByClass(deleteButtonClassName, driver).size();
 	}
-
 
 }

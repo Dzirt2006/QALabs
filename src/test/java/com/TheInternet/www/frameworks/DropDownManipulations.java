@@ -3,8 +3,6 @@ package com.TheInternet.www.frameworks;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import com.TheInternet.www.pages.BasePage;
-
 public class DropDownManipulations extends BasePage implements ElementSearchers {
 	
 	

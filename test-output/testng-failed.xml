@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
-  <test thread-count="5" name="Unit1(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TheInternet.www.tests.DisappearingElements">
+      <class name="com.TheInternet.www.tests.BasicAuth">
         <methods>
           <include name="afterMethod"/>
-          <include name="portfolio"/>
           <include name="beforeMethod"/>
+          <include name="auth"/>
         </methods>
-      </class> <!-- com.TheInternet.www.tests.DisappearingElements -->
-      <class name="com.TheInternet.www.tests.DragNDrop">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="checkbox"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.TheInternet.www.tests.DragNDrop -->
+      </class> <!-- com.TheInternet.www.tests.BasicAuth -->
     </classes>
-  </test> <!-- Unit1(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -3,6 +3,7 @@ package com.TheInternet.www.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.TheInternet.www.frameworks.BasePage;
 import com.TheInternet.www.frameworks.ElementSearchers;
 import com.TheInternet.www.frameworks.MouseActions;
 
