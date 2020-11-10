@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="theInternet.tests.NotificationMessage">
+      <class name="theInternet.tests.Redirection">
         <methods>
-          <include name="notificationCheck"/>
+          <include name="redirect"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- theInternet.tests.NotificationMessage -->
+      </class> <!-- theInternet.tests.Redirection -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
