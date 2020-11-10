@@ -1,7 +1,5 @@
 package com.TheInternet.www.frameworks;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

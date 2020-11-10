@@ -16,6 +16,11 @@ public interface MouseActions {
 		new Actions(driver).doubleClick(element).perform();
 	}
 
+	default void moveMouseToVeiwportPane(WebDriver driver) {
+		Actions action = new Actions(driver);
+		action.moveByOffset(600, -1).build().perform();
+	}
+
 	// drag and drop
 	default void dragNDrop(WebDriver driver, WebElement from, WebElement to) {
 		// Here, getting x and y offset to drop source object on target object location
@@ -40,9 +45,9 @@ public interface MouseActions {
 //		new Actions(driver).dragAndDrop(from, to).build().perform();
 
 		Actions builder = new Actions(driver);
-		Action dragAndDrop = builder.clickAndHold(from)
-				.moveByOffset(xOffset, yOffset + 100).moveToElement(to).release(to).build();
-		
+		Action dragAndDrop = builder.clickAndHold(from).moveByOffset(xOffset, yOffset + 100).moveToElement(to)
+				.release(to).build();
+
 		try {
 			Thread.sleep(500);
 		} catch (InterruptedException e) {
@@ -50,8 +55,6 @@ public interface MouseActions {
 			e.printStackTrace();
 		}
 		dragAndDrop.perform();
-
-		
 
 	}
 

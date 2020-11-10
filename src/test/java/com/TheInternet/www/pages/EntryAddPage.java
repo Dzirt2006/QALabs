@@ -1,20 +1,15 @@
 package com.TheInternet.www.pages;
 
 import java.util.List;
-import java.util.Set;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.TheInternet.www.frameworks.BasePage;
 import com.TheInternet.www.frameworks.ElementSearchers;
+import com.TheInternet.www.frameworks.ModalWindow;
 
-public class EntryAddPage extends BasePage implements ElementSearchers {
+public class EntryAddPage extends ModalWindow{
 	String closeXPath = "//p[.='Close']";
 	String clickable = "//a[@id='restart-ad']";
 
@@ -34,29 +29,32 @@ public class EntryAddPage extends BasePage implements ElementSearchers {
 	public EntryAddPage refresh() {
 		// TODO Auto-generated method stub
 		super.refresh();
+		sleep(3000);
 		return this;
 	}
 
 	public EntryAddPage closeModalWindow() {
-		WebElement close = new WebDriverWait(driver, 3000)
-				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(closeXPath)));
-		close.click();
+		super.closeModalWindow(closeXPath);
+//		WebElement close = waitVisibility(driver, closeXPath);
+//		close.click();
 		return this;
 	}
 
 	public boolean modalIsVisible() {
-		return new WebDriverWait(driver, 3000)
-				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(closeXPath))).isDisplayed();
+//		return waitVisibility(driver, closeXPath).isDisplayed();
+		return super.modalIsVisible(closeXPath);
 	}
 
 	public EntryAddPage reenableModal() {
-		elementByXpath(clickable, driver).click();
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		sleep(3000);
+//		WebElement activate = elementByXpath(clickable, driver);
+//		if (activate.isDisplayed() && activate.isEnabled()) {
+//			activate.click();
+//		} else {
+//			sleep(1500);
+//			activate.click();
+//		}
+		super.reenableModal(clickable);
 		return this;
 	}
 

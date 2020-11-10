@@ -7,19 +7,13 @@ import com.TheInternet.www.pages.DisappearingElementsPage;
 
 public class DisappearingElements extends TheInternetTestBase {
 
-//	@Test
-//	public void home() {
-//		String home = "Home";
-//		String url = new DisappearingElementsPage(BaseUrl, driver).navigateTo().getAllButtons().clickOn(home).getUrl();
-////		Assert.assertEquals(url, BaseUrl);
-//	}
-
 	@Test
 	public void portfolio() {
 		DisappearingElementsPage dep = new DisappearingElementsPage(BaseUrl, driver);
 		int buttonCount = dep.navigateTo().getAmountOfButtons();
 		int buttonsAfterRefresh = dep.refresh().getAmountOfButtons();
-
+		// checked many times -bug, sometimes it disappearing/reappearing on each page
+		// load, sometimes not.
 		Assert.assertNotEquals(buttonCount, buttonsAfterRefresh);
 	}
 }

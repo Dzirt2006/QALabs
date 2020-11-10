@@ -33,6 +33,7 @@ public class InputPage extends InputField {
 
 	public int getDataFromInputField() {
 		String result = super.getDataFromInputField(mappedElement);
+		@SuppressWarnings("unused")
 		int returnVal;
 		try {
 			returnVal = Integer.parseInt(result);

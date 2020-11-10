@@ -1,10 +1,8 @@
 package com.TheInternet.www.frameworks;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.HttpSessionId;
 
-public abstract class BasePage {
+public abstract class BasePage implements Waiters{
 	protected WebDriver driver;
 	private String baseUrl;
 

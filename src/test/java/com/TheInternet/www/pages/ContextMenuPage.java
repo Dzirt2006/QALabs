@@ -1,13 +1,11 @@
 package com.TheInternet.www.pages;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import com.TheInternet.www.frameworks.AlertBox;
 import com.TheInternet.www.frameworks.MouseActions;

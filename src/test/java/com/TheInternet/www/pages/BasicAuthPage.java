@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.TheInternet.www.frameworks.BasePage;
 import com.TheInternet.www.frameworks.ElementSearchers;
-import com.TheInternet.www.frameworks.Table;
+
 
 public class BasicAuthPage extends BasePage implements ElementSearchers {
 	String direct = "/basic_auth";
