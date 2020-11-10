@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2583" started-at="2020-11-10T12:39:51 EST" finished-at="2020-11-10T12:39:54 EST">
+  <suite name="Default suite" duration-ms="3041" started-at="2020-11-10T15:28:19 EST" finished-at="2020-11-10T15:28:22 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2583" started-at="2020-11-10T12:39:51 EST" finished-at="2020-11-10T12:39:54 EST">
-      <class name="theInternet.tests.Login">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.Login@1f554b06]" name="beforeMethod" is-config="true" duration-ms="637" started-at="2020-11-10T12:39:51 EST" finished-at="2020-11-10T12:39:52 EST">
+    <test name="Default test" duration-ms="3041" started-at="2020-11-10T15:28:19 EST" finished-at="2020-11-10T15:28:22 EST">
+      <class name="theInternet.tests.NotificationMessage">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.NotificationMessage@1f554b06]" name="beforeMethod" is-config="true" duration-ms="679" started-at="2020-11-10T15:28:19 EST" finished-at="2020-11-10T15:28:20 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login()[pri:0, instance:theInternet.tests.Login@1f554b06]" name="login" duration-ms="1861" started-at="2020-11-10T12:39:52 EST" finished-at="2020-11-10T12:39:54 EST">
+        <test-method status="PASS" signature="notificationCheck()[pri:0, instance:theInternet.tests.NotificationMessage@1f554b06]" name="notificationCheck" duration-ms="2291" started-at="2020-11-10T15:28:20 EST" finished-at="2020-11-10T15:28:22 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.Login@1f554b06]" name="afterMethod" is-config="true" duration-ms="64" started-at="2020-11-10T12:39:54 EST" finished-at="2020-11-10T12:39:54 EST">
+        </test-method> <!-- notificationCheck -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.NotificationMessage@1f554b06]" name="afterMethod" is-config="true" duration-ms="55" started-at="2020-11-10T15:28:22 EST" finished-at="2020-11-10T15:28:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- theInternet.tests.Login -->
+      </class> <!-- theInternet.tests.NotificationMessage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
