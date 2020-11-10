@@ -1,12 +1,9 @@
 package theInternet.pages;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
 
 import frameworks.BasePage;
 import frameworks.ElementSearchers;
-import theInternet.tests.Login;
-import theInternet.tests.TheInternetTestBase;
 
 public class LoginPage extends BasePage implements ElementSearchers {
 
@@ -17,11 +14,9 @@ public class LoginPage extends BasePage implements ElementSearchers {
 
 	public LoginPage(String url, WebDriver driver) {
 		super(url, driver);
-		// TODO Auto-generated constructor stub
 	}
 
 	public LoginPage navigateTo() {
-		// TODO Auto-generated method stub
 		super.navigateTo(direction);
 		return this;
 	}

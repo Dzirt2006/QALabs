@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2583" started-at="2020-11-10T12:39:51 EST" finished-at="2020-11-10T12:39:54 EST">
+  <suite name="Default suite" duration-ms="1397" started-at="2020-11-10T16:06:29 EST" finished-at="2020-11-10T16:06:30 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2583" started-at="2020-11-10T12:39:51 EST" finished-at="2020-11-10T12:39:54 EST">
-      <class name="theInternet.tests.Login">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.Login@1f554b06]" name="beforeMethod" is-config="true" duration-ms="637" started-at="2020-11-10T12:39:51 EST" finished-at="2020-11-10T12:39:52 EST">
+    <test name="Default test" duration-ms="1397" started-at="2020-11-10T16:06:29 EST" finished-at="2020-11-10T16:06:30 EST">
+      <class name="theInternet.tests.Redirection">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.Redirection@1f554b06]" name="beforeMethod" is-config="true" duration-ms="656" started-at="2020-11-10T16:06:29 EST" finished-at="2020-11-10T16:06:29 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login()[pri:0, instance:theInternet.tests.Login@1f554b06]" name="login" duration-ms="1861" started-at="2020-11-10T12:39:52 EST" finished-at="2020-11-10T12:39:54 EST">
+        <test-method status="PASS" signature="redirect()[pri:0, instance:theInternet.tests.Redirection@1f554b06]" name="redirect" duration-ms="669" started-at="2020-11-10T16:06:29 EST" finished-at="2020-11-10T16:06:30 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.Login@1f554b06]" name="afterMethod" is-config="true" duration-ms="64" started-at="2020-11-10T12:39:54 EST" finished-at="2020-11-10T12:39:54 EST">
+        </test-method> <!-- redirect -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.Redirection@1f554b06]" name="afterMethod" is-config="true" duration-ms="55" started-at="2020-11-10T16:06:30 EST" finished-at="2020-11-10T16:06:30 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- theInternet.tests.Login -->
+      </class> <!-- theInternet.tests.Redirection -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
