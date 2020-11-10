@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
   <test thread-count="5" name="Unit1(failed)">
     <classes>
-      <class name="com.TheInternet.www.tests.DragNDrop">
+      <class name="theInternet.tests.DragNDrop">
         <methods>
-          <include name="afterMethod"/>
           <include name="checkbox"/>
           <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.TheInternet.www.tests.DragNDrop -->
+      </class> <!-- theInternet.tests.DragNDrop -->
     </classes>
   </test> <!-- Unit1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
