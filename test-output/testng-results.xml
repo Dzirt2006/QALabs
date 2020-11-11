@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2266" started-at="2020-11-11T13:11:21 EST" finished-at="2020-11-11T13:11:24 EST">
+  <suite name="Default suite" duration-ms="1407" started-at="2020-11-11T15:29:30 EST" finished-at="2020-11-11T15:29:31 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2266" started-at="2020-11-11T13:11:21 EST" finished-at="2020-11-11T13:11:24 EST">
-      <class name="theInternet.tests.FileDownload">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.FileDownload@1f554b06]" name="beforeMethod" is-config="true" duration-ms="680" started-at="2020-11-11T13:11:21 EST" finished-at="2020-11-11T13:11:22 EST">
+    <test name="Default test" duration-ms="1407" started-at="2020-11-11T15:29:30 EST" finished-at="2020-11-11T15:29:31 EST">
+      <class name="theInternet.tests.OpeningWindow">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.OpeningWindow@1f554b06]" name="beforeMethod" is-config="true" duration-ms="685" started-at="2020-11-11T15:29:30 EST" finished-at="2020-11-11T15:29:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="chrome()[pri:0, instance:theInternet.tests.FileDownload@1f554b06]" name="chrome" duration-ms="1569" started-at="2020-11-11T13:11:22 EST" finished-at="2020-11-11T13:11:24 EST">
+        <test-method status="PASS" signature="newWindow()[pri:0, instance:theInternet.tests.OpeningWindow@1f554b06]" name="newWindow" duration-ms="651" started-at="2020-11-11T15:29:31 EST" finished-at="2020-11-11T15:29:31 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chrome -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.FileDownload@1f554b06]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-11-11T13:11:24 EST" finished-at="2020-11-11T13:11:24 EST">
+        </test-method> <!-- newWindow -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.OpeningWindow@1f554b06]" name="afterMethod" is-config="true" duration-ms="53" started-at="2020-11-11T15:29:31 EST" finished-at="2020-11-11T15:29:31 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- theInternet.tests.FileDownload -->
+      </class> <!-- theInternet.tests.OpeningWindow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

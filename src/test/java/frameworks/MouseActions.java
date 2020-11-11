@@ -1,7 +1,12 @@
 package frameworks;
 
 import java.awt.AWTException;
+import java.awt.MouseInfo;
+import java.awt.Point;
+import java.awt.PointerInfo;
 import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,27 +53,45 @@ public interface MouseActions {
 		int xOffset1 = from.getLocation().getX();
 		int yOffset1 = from.getLocation().getY();
 
-		System.out.println("xOffset1--->" + xOffset1 + " yOffset1--->" + yOffset1);
-
 		// Secondly, get x and y offset for to object
 		int xOffset = to.getLocation().getX();
 		int yOffset = to.getLocation().getY();
-
-		System.out.println("xOffset--->" + xOffset + " yOffset--->" + yOffset);
 
 		// Find the xOffset and yOffset difference to find x and y offset needed in
 		// which from object required to dragged and dropped
 		xOffset = (xOffset - xOffset1);
 //		yOffset = (yOffset - yOffset1) + 20;
 //		new Actions(driver).dragAndDropBy(from, xOffset, yOffset + 100).build().perform();
-
 //		new Actions(driver).dragAndDrop(from, to).build().perform();
 
+//		new Actions(driver).clickAndHold(from).moveByOffset(xOffset, yOffset + 100).release().build().perform();
+		
+		
 		// mouse release doen't work in chrome
 		Actions builder = new Actions(driver);
-		Action dragAndDrop = builder.clickAndHold(from).moveByOffset(xOffset, yOffset + 100).moveToElement(to).release()
+		Action dragAndDrop = builder.clickAndHold(from).moveByOffset(xOffset, yOffset + 100).click().release(from)
 				.build();
 		dragAndDrop.perform();
+
+//		Robot robot = null;
+//		try {
+//			robot = new Robot();
+//		} catch (AWTException e) {
+//			e.printStackTrace();
+//		}
+//		System.out.println(xOffset1 + " to: " + xOffset + " y:  " + yOffset1 + " to: " + yOffset);
+//
+//		robot.mouseMove(xOffset1,yOffset);
+//		robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+//		robot.mouseMove( xOffset,yOffset);
+//		robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
+//		
+//		PointerInfo a = MouseInfo.getPointerInfo();
+//		Point b = a.getLocation();
+//		int x = (int) b.getX();
+//		int y = (int) b.getY();
+//		System.out.print("Y: "+y );
+//		System.out.print("X: "+x);
 	}
 
 }
