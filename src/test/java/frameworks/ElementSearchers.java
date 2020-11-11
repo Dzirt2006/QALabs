@@ -23,6 +23,10 @@ public interface ElementSearchers {
 		return driver.findElement(By.id(id));
 	}
 
+	default WebElement elementById(String id, WebElement element) {
+		return element.findElement(By.id(id));
+	}
+
 	default WebElement elementByClass(String className, WebDriver driver) {
 		return driver.findElement(By.className(className));
 	}
