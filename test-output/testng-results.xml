@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1404" started-at="2020-11-10T17:07:19 EST" finished-at="2020-11-10T17:07:20 EST">
+  <suite name="Default suite" duration-ms="1240" started-at="2020-11-10T21:00:21 EST" finished-at="2020-11-10T21:00:22 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1404" started-at="2020-11-10T17:07:19 EST" finished-at="2020-11-10T17:07:20 EST">
-      <class name="theInternet.tests.HorizontalSlider">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.HorizontalSlider@1f554b06]" name="beforeMethod" is-config="true" duration-ms="645" started-at="2020-11-10T17:07:19 EST" finished-at="2020-11-10T17:07:19 EST">
+    <test name="Default test" duration-ms="1240" started-at="2020-11-10T21:00:21 EST" finished-at="2020-11-10T21:00:22 EST">
+      <class name="theInternet.tests.InputNumber">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.InputNumber@1f554b06]" name="beforeMethod" is-config="true" duration-ms="646" started-at="2020-11-10T21:00:21 EST" finished-at="2020-11-10T21:00:21 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="slider()[pri:0, instance:theInternet.tests.HorizontalSlider@1f554b06]" name="slider" duration-ms="687" started-at="2020-11-10T17:07:19 EST" finished-at="2020-11-10T17:07:20 EST">
+        <test-method status="PASS" signature="inputNumber()[pri:0, instance:theInternet.tests.InputNumber@1f554b06]" name="inputNumber" duration-ms="520" started-at="2020-11-10T21:00:21 EST" finished-at="2020-11-10T21:00:22 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- slider -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.HorizontalSlider@1f554b06]" name="afterMethod" is-config="true" duration-ms="55" started-at="2020-11-10T17:07:20 EST" finished-at="2020-11-10T17:07:20 EST">
+        </test-method> <!-- inputNumber -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.InputNumber@1f554b06]" name="afterMethod" is-config="true" duration-ms="56" started-at="2020-11-10T21:00:22 EST" finished-at="2020-11-10T21:00:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- theInternet.tests.HorizontalSlider -->
+      </class> <!-- theInternet.tests.InputNumber -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

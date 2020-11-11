@@ -22,13 +22,6 @@ public class Login extends TheInternetTestBase {
 		Assert.assertEquals(curerentUrl, BaseUrl+redirectUrl);
 	}
 	
-	@Test
-	public void loginFail() {
-		
-		//check for fail after add notification
-//		Assert.assertEquals();
-	}
-	
-	
+
 
 }

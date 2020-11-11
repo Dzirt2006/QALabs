@@ -10,6 +10,13 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- theInternet.tests.DragNDrop -->
+      <class name="theInternet.tests.DisappearingElements">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="portfolio"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- theInternet.tests.DisappearingElements -->
     </classes>
   </test> <!-- Unit1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
