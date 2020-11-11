@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1407" started-at="2020-11-11T15:29:30 EST" finished-at="2020-11-11T15:29:31 EST">
+  <suite name="Default suite" duration-ms="6288" started-at="2020-11-11T17:56:46 EST" finished-at="2020-11-11T17:56:52 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1407" started-at="2020-11-11T15:29:30 EST" finished-at="2020-11-11T15:29:31 EST">
-      <class name="theInternet.tests.OpeningWindow">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.OpeningWindow@1f554b06]" name="beforeMethod" is-config="true" duration-ms="685" started-at="2020-11-11T15:29:30 EST" finished-at="2020-11-11T15:29:31 EST">
+    <test name="Default test" duration-ms="6288" started-at="2020-11-11T17:56:46 EST" finished-at="2020-11-11T17:56:52 EST">
+      <class name="theInternet.tests.JSAlerts">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="beforeMethod" is-config="true" duration-ms="697" started-at="2020-11-11T17:56:46 EST" finished-at="2020-11-11T17:56:47 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="newWindow()[pri:0, instance:theInternet.tests.OpeningWindow@1f554b06]" name="newWindow" duration-ms="651" started-at="2020-11-11T15:29:31 EST" finished-at="2020-11-11T15:29:31 EST">
+        <test-method status="PASS" signature="before()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="before" is-config="true" duration-ms="464" started-at="2020-11-11T17:56:47 EST" finished-at="2020-11-11T17:56:47 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newWindow -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.OpeningWindow@1f554b06]" name="afterMethod" is-config="true" duration-ms="53" started-at="2020-11-11T15:29:31 EST" finished-at="2020-11-11T15:29:31 EST">
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="jsAlerts()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="jsAlerts" duration-ms="1105" started-at="2020-11-11T17:56:47 EST" finished-at="2020-11-11T17:56:48 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsAlerts -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="afterMethod" is-config="true" duration-ms="55" started-at="2020-11-11T17:56:48 EST" finished-at="2020-11-11T17:56:48 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- theInternet.tests.OpeningWindow -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="beforeMethod" is-config="true" duration-ms="393" started-at="2020-11-11T17:56:48 EST" finished-at="2020-11-11T17:56:49 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="before()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="before" is-config="true" duration-ms="467" started-at="2020-11-11T17:56:49 EST" finished-at="2020-11-11T17:56:49 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="jsConfirm()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="jsConfirm" duration-ms="1067" started-at="2020-11-11T17:56:49 EST" finished-at="2020-11-11T17:56:50 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsConfirm -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="afterMethod" is-config="true" duration-ms="56" started-at="2020-11-11T17:56:50 EST" finished-at="2020-11-11T17:56:50 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="beforeMethod" is-config="true" duration-ms="393" started-at="2020-11-11T17:56:50 EST" finished-at="2020-11-11T17:56:51 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="before()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="before" is-config="true" duration-ms="445" started-at="2020-11-11T17:56:51 EST" finished-at="2020-11-11T17:56:51 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="jsPrompt()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="jsPrompt" duration-ms="1071" started-at="2020-11-11T17:56:51 EST" finished-at="2020-11-11T17:56:52 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsPrompt -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.JSAlerts@694e1548]" name="afterMethod" is-config="true" duration-ms="53" started-at="2020-11-11T17:56:52 EST" finished-at="2020-11-11T17:56:52 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- theInternet.tests.JSAlerts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -15,11 +15,18 @@ public class AlertBox extends BasePage {
 		return alert;
 	}
 
-	public void acceptAlert(Alert alert) {
+	public AlertBox acceptAlert(Alert alert) {
 		alert.accept();
+		return this;
 	}
 
-	public void cancelAlert(Alert alert) {
-		alert.accept();
+	public AlertBox cancelAlert(Alert alert) {
+		alert.dismiss();
+		return this;
+	}
+
+	public AlertBox sendPrompt(Alert alert, String prompt) {
+		alert.sendKeys(prompt);
+		return this;
 	}
 }
