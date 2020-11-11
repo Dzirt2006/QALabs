@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Properties;
 
-public class ConfigurationReader {
+public class ConfigurationProvider {
 
 	public HashMap<String, String> getDataFromTheFile(String fileName) throws IOException {
 		InputStream inputStream = null;

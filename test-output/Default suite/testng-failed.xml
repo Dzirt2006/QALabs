@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="theInternet.tests.HorizontalSlider">
+      <class name="theInternet.tests.InputNumber">
         <methods>
           <include name="beforeMethod"/>
-          <include name="slider"/>
           <include name="afterMethod"/>
+          <include name="inputNumber"/>
         </methods>
-      </class> <!-- theInternet.tests.HorizontalSlider -->
+      </class> <!-- theInternet.tests.InputNumber -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
