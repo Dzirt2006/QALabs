@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import theInternet.pages.FileDownloader;
 
-public class ChromeDownload extends TheInternetTestBase {
+public class FileDownload extends TheInternetTestBase {
 
 	@Test
 	public void chrome() {
