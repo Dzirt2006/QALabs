@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Unit1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 10 20:18:52 EST 2020</td>
+<td>Started on:</td><td>Wed Nov 11 12:24:11 EST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>60 seconds (60479 ms)</td>
+<tr><td>Total time:</td><td>59 seconds (59360 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,90 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='theInternet.tests.FileDownload.afterMethod()'><b>afterMethod</b><br>Test class: theInternet.tests.FileDownload</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.183)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KudzeDev&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;1.8.0_272&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.183 (0b568b034b8f..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:33251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4955ee45326d2d9997720e47bfd983c9
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at theInternet.tests.TheInternetTestBase.afterMethod(TheInternetTestBase.java:27)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1610372241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1610372241'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.183)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KudzeDev&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;1.8.0_272&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.183 (0b568b034b8f..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:33251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4955ee45326d2d9997720e47bfd983c9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at theInternet.tests.TheInternetTestBase.afterMethod(TheInternetTestBase.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>theInternet.tests.FileDownload@2833cc44</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -79,8 +163,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: did not expect [A] but found [A]
 	at theInternet.tests.DragNDrop.checkbox(DragNDrop.java:16)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1969347346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1969347346'><pre>java.lang.AssertionError: did not expect [A] but found [A]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1808527451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1808527451'><pre>java.lang.AssertionError: did not expect [A] but found [A]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failEquals(Assert.java:1041)
 	at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
@@ -117,20 +201,63 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>7</td>
-<td>theInternet.tests.DragNDrop@4b1c1ea0</td></tr>
+<td>theInternet.tests.DragNDrop@33f88ab</td></tr>
 <tr>
-<td title='theInternet.tests.DisappearingElements.portfolio()'><b>portfolio</b><br>Test class: theInternet.tests.DisappearingElements</td>
-<td><div><pre>java.lang.AssertionError: did not expect [5] but found [5]
-	at theInternet.tests.DisappearingElements.portfolio(DisappearingElements.java:17)
+<td title='theInternet.tests.FileDownload.chrome()'><b>chrome</b><br>Test class: theInternet.tests.FileDownload</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.183)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KudzeDev&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;1.8.0_272&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.183 (0b568b034b8f..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:33251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4955ee45326d2d9997720e47bfd983c9
+*** Element info: {Using=xpath, value=//div[@id=&apos;content&apos;]//a[@href=&apos;download/logo.png&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at frameworks.Waiters.waitVisibility(Waiters.java:20)
+	at theInternet.pages.FileDownloader.downloadLogo(FileDownloader.java:22)
+	at theInternet.tests.FileDownload.chrome(FileDownload.java:14)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace914039525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace914039525'><pre>java.lang.AssertionError: did not expect [5] but found [5]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failEquals(Assert.java:1041)
-	at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
-	at org.testng.Assert.assertNotEquals(Assert.java:1531)
-	at org.testng.Assert.assertNotEquals(Assert.java:1535)
-	at theInternet.tests.DisappearingElements.portfolio(DisappearingElements.java:17)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace212232499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace212232499'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=86.0.4240.183)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KudzeDev&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;1.8.0_272&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.183 (0b568b034b8f..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:33251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4955ee45326d2d9997720e47bfd983c9
+*** Element info: {Using=xpath, value=//div[@id=&apos;content&apos;]//a[@href=&apos;download/logo.png&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at frameworks.Waiters.waitVisibility(Waiters.java:20)
+	at theInternet.pages.FileDownloader.downloadLogo(FileDownloader.java:22)
+	at theInternet.tests.FileDownload.chrome(FileDownload.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,8 +287,136 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>6</td>
-<td>theInternet.tests.DisappearingElements@27a8c74e</td></tr>
+<td>5</td>
+<td>theInternet.tests.FileDownload@2833cc44</td></tr>
+<tr>
+<td title='theInternet.tests.FormAuth.login()'><b>login</b><br>Test class: theInternet.tests.FormAuth</td>
+<td><div><pre>java.lang.AssertionError: expected [http://the-internet.herokuapp.comsecure] but found [http://the-internet.herokuapp.com/secure]
+	at theInternet.tests.FormAuth.login(FormAuth.java:22)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2030138610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2030138610'><pre>java.lang.AssertionError: expected [http://the-internet.herokuapp.comsecure] but found [http://the-internet.herokuapp.com/secure]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at theInternet.tests.FormAuth.login(FormAuth.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>theInternet.tests.FormAuth@17579e0f</td></tr>
+<tr>
+<td title='theInternet.tests.NotificationMessage.notificationCheck()'><b>notificationCheck</b><br>Test class: theInternet.tests.NotificationMessage</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content&apos;]//a&quot;}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KudzeDev&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;1.8.0_272&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.183 (0b568b034b8f..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:43865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: af4594a904443c69e1f61823fd3d19f7
+*** Element info: {Using=xpath, value=//div[@id=&apos;content&apos;]//a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at frameworks.ElementSearchers.elementByXpath(ElementSearchers.java:11)
+	at theInternet.pages.NotificationMessagePage.generateNotification(NotificationMessagePage.java:23)
+	at theInternet.tests.NotificationMessage.notificationCheck(NotificationMessage.java:11)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1656318404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1656318404'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;content&apos;]//a&quot;}
+  (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KudzeDev&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-52-generic&apos;, java.version: &apos;1.8.0_272&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 86.0.4240.183 (0b568b034b8f..., userDataDir: /tmp/.org.chromium.Chromium...}, goog:chromeOptions: {debuggerAddress: localhost:43865}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: af4594a904443c69e1f61823fd3d19f7
+*** Element info: {Using=xpath, value=//div[@id=&apos;content&apos;]//a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at frameworks.ElementSearchers.elementByXpath(ElementSearchers.java:11)
+	at theInternet.pages.NotificationMessagePage.generateNotification(NotificationMessagePage.java:23)
+	at theInternet.tests.NotificationMessage.notificationCheck(NotificationMessage.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>theInternet.tests.NotificationMessage@1b68ddbd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -173,78 +428,78 @@ function toggleAllBoxes() {
 <tr>
 <td title='theInternet.tests.AddRemove.addElements()'><b>addElements</b><br>Test class: theInternet.tests.AddRemove</td>
 <td></td>
-<td>0</td>
-<td>theInternet.tests.AddRemove@53f65459</td></tr>
+<td>1</td>
+<td>theInternet.tests.AddRemove@1786dec2</td></tr>
 <tr>
 <td title='theInternet.tests.AddRemove.addremoveElements()'><b>addremoveElements</b><br>Test class: theInternet.tests.AddRemove</td>
 <td></td>
 <td>0</td>
-<td>theInternet.tests.AddRemove@53f65459</td></tr>
+<td>theInternet.tests.AddRemove@1786dec2</td></tr>
 <tr>
 <td title='theInternet.tests.BasicAuth.auth()'><b>auth</b><br>Test class: theInternet.tests.BasicAuth</td>
 <td></td>
 <td>0</td>
-<td>theInternet.tests.BasicAuth@3b088d51</td></tr>
+<td>theInternet.tests.BasicAuth@74650e52</td></tr>
 <tr>
 <td title='theInternet.tests.Checkboxes.checkbox()'><b>checkbox</b><br>Test class: theInternet.tests.Checkboxes</td>
 <td></td>
 <td>0</td>
-<td>theInternet.tests.Checkboxes@15d0c81b</td></tr>
+<td>theInternet.tests.Checkboxes@4b1c1ea0</td></tr>
 <tr>
 <td title='theInternet.tests.ContexMenu.checkbox()'><b>checkbox</b><br>Test class: theInternet.tests.ContexMenu</td>
 <td></td>
 <td>1</td>
-<td>theInternet.tests.ContexMenu@6acdbdf5</td></tr>
+<td>theInternet.tests.ContexMenu@4d41cee</td></tr>
 <tr>
 <td title='theInternet.tests.DropDown.dropdown()'><b>dropdown</b><br>Test class: theInternet.tests.DropDown</td>
 <td></td>
 <td>0</td>
-<td>theInternet.tests.DropDown@33f88ab</td></tr>
+<td>theInternet.tests.DropDown@646d64ab</td></tr>
 <tr>
 <td title='theInternet.tests.EntryAdd.home()'><b>home</b><br>Test class: theInternet.tests.EntryAdd</td>
 <td></td>
-<td>19</td>
-<td>theInternet.tests.EntryAdd@4d41cee</td></tr>
+<td>7</td>
+<td>theInternet.tests.EntryAdd@27a8c74e</td></tr>
 <tr>
 <td title='theInternet.tests.Tables.inputNumber()'><b>inputNumber</b><br>Test class: theInternet.tests.Tables</td>
 <td></td>
 <td>1</td>
-<td>theInternet.tests.Tables@1786dec2</td></tr>
+<td>theInternet.tests.Tables@15d0c81b</td></tr>
 <tr>
 <td title='theInternet.tests.InputNumber.inputNumber()'><b>inputNumber</b><br>Test class: theInternet.tests.InputNumber</td>
 <td></td>
 <td>0</td>
-<td>theInternet.tests.InputNumber@1b68ddbd</td></tr>
-<tr>
-<td title='theInternet.tests.Login.login()'><b>login</b><br>Test class: theInternet.tests.Login</td>
-<td></td>
-<td>1</td>
-<td>theInternet.tests.Login@17579e0f</td></tr>
+<td>theInternet.tests.InputNumber@e320068</td></tr>
 <tr>
 <td title='theInternet.tests.ExitIntent.moveMouseOut()'><b>moveMouseOut</b><br>Test class: theInternet.tests.ExitIntent</td>
 <td></td>
 <td>3</td>
-<td>theInternet.tests.ExitIntent@2d8f65a4</td></tr>
+<td>theInternet.tests.ExitIntent@536aaa8d</td></tr>
 <tr>
-<td title='theInternet.tests.NotificationMessage.notificationCheck()'><b>notificationCheck</b><br>Test class: theInternet.tests.NotificationMessage</td>
+<td title='theInternet.tests.DisappearingElements.portfolio()'><b>portfolio</b><br>Test class: theInternet.tests.DisappearingElements</td>
 <td></td>
-<td>2</td>
-<td>theInternet.tests.NotificationMessage@2833cc44</td></tr>
+<td>6</td>
+<td>theInternet.tests.DisappearingElements@59e5ddf</td></tr>
 <tr>
 <td title='theInternet.tests.Redirection.redirect()'><b>redirect</b><br>Test class: theInternet.tests.Redirection</td>
 <td></td>
-<td>0</td>
-<td>theInternet.tests.Redirection@74650e52</td></tr>
+<td>1</td>
+<td>theInternet.tests.Redirection@6acdbdf5</td></tr>
+<tr>
+<td title='theInternet.tests.ShadowDom.shadowDOM()'><b>shadowDOM</b><br>Test class: theInternet.tests.ShadowDom</td>
+<td></td>
+<td>2</td>
+<td>theInternet.tests.ShadowDom@3712b94</td></tr>
 <tr>
 <td title='theInternet.tests.HorizontalSlider.slider()'><b>slider</b><br>Test class: theInternet.tests.HorizontalSlider</td>
 <td></td>
-<td>0</td>
-<td>theInternet.tests.HorizontalSlider@4d95d2a2</td></tr>
+<td>1</td>
+<td>theInternet.tests.HorizontalSlider@3b088d51</td></tr>
 <tr>
 <td title='theInternet.tests.IndexPageTitle.title()'><b>title</b><br>Test class: theInternet.tests.IndexPageTitle</td>
 <td></td>
 <td>0</td>
-<td>theInternet.tests.IndexPageTitle@3712b94</td></tr>
+<td>theInternet.tests.IndexPageTitle@2d8f65a4</td></tr>
 </table><p>
 </body>
 </html>

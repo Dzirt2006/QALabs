@@ -4,7 +4,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ChromeDownloader extends BasePage implements ElementSearchers, ShadowRootManipulation {
+public class ChromeDownloader extends BasePage implements ElementSearchers, ShadowRootManipulation, ScroolActions {
 
 	public ChromeDownloader(String url, WebDriver driver) {
 		super(url, driver);

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import frameworks.Notifications;
 
 public class NotificationMessagePage extends Notifications {
-	String direction = "notification_message_rendered";
+	String direction = "/notification_message_rendered";
 	String noteId = "flash";
 	String aXPath="//div[@id='content']//a";
 

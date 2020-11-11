@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="theInternet.tests.ShadowDom">
+      <class name="theInternet.tests.FileDownload">
         <methods>
           <include name="beforeMethod"/>
+          <include name="chrome"/>
           <include name="afterMethod"/>
-          <include name="shadowDOM"/>
         </methods>
-      </class> <!-- theInternet.tests.ShadowDom -->
+      </class> <!-- theInternet.tests.FileDownload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

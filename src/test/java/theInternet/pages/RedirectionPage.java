@@ -11,7 +11,7 @@ import frameworks.BasePage;
 import frameworks.ElementSearchers;
 
 public class RedirectionPage extends BasePage implements ElementSearchers {
-	String direction = "redirector";
+	String direction = "/redirector";
 	String redirectTriggerId = "redirect";
 	List<WebElement> codes;
 	String mainPageUrl;

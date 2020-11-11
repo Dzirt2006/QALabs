@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1204" started-at="2020-11-11T12:14:38 EST" finished-at="2020-11-11T12:14:39 EST">
+  <suite name="Default suite" duration-ms="2266" started-at="2020-11-11T13:11:21 EST" finished-at="2020-11-11T13:11:24 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1204" started-at="2020-11-11T12:14:38 EST" finished-at="2020-11-11T12:14:39 EST">
-      <class name="theInternet.tests.ShadowDom">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.ShadowDom@1f554b06]" name="beforeMethod" is-config="true" duration-ms="630" started-at="2020-11-11T12:14:38 EST" finished-at="2020-11-11T12:14:39 EST">
+    <test name="Default test" duration-ms="2266" started-at="2020-11-11T13:11:21 EST" finished-at="2020-11-11T13:11:24 EST">
+      <class name="theInternet.tests.FileDownload">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.FileDownload@1f554b06]" name="beforeMethod" is-config="true" duration-ms="680" started-at="2020-11-11T13:11:21 EST" finished-at="2020-11-11T13:11:22 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="shadowDOM()[pri:0, instance:theInternet.tests.ShadowDom@1f554b06]" name="shadowDOM" duration-ms="504" started-at="2020-11-11T12:14:39 EST" finished-at="2020-11-11T12:14:39 EST">
+        <test-method status="PASS" signature="chrome()[pri:0, instance:theInternet.tests.FileDownload@1f554b06]" name="chrome" duration-ms="1569" started-at="2020-11-11T13:11:22 EST" finished-at="2020-11-11T13:11:24 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shadowDOM -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.ShadowDom@1f554b06]" name="afterMethod" is-config="true" duration-ms="54" started-at="2020-11-11T12:14:39 EST" finished-at="2020-11-11T12:14:39 EST">
+        </test-method> <!-- chrome -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.FileDownload@1f554b06]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-11-11T13:11:24 EST" finished-at="2020-11-11T13:11:24 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- theInternet.tests.ShadowDom -->
+      </class> <!-- theInternet.tests.FileDownload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

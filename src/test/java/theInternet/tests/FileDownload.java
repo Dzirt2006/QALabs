@@ -9,9 +9,10 @@ public class FileDownload extends TheInternetTestBase {
 
 	@Test
 	public void chrome() {
-		// why download logo? because logo always on the page even after restart server,
-		// it's a base file;
-		boolean loadStatus = new FileDownloader(BaseUrl, driver).navigateTo().downloadLogo().checkDownload();
+
+		boolean loadStatus = new FileDownloader(BaseUrl, driver).navigateTo().getListofAnchors()
+				.downloadElement(0)
+				.checkDownload();
 		Assert.assertEquals(loadStatus, true);
 	}
 

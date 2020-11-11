@@ -14,7 +14,7 @@ public class FormAuth extends TheInternetTestBase {
 	public void login() {
 		String user = "tomsmith";
 		String password = "SuperSecretPassword!";
-		String redirectUrl = "secure";
+		String redirectUrl = "/secure";
 
 		String curerentUrl = new LoginPage(BaseUrl, driver).navigateTo()
 				.enterAndSubmitData(user, password).getUrl();

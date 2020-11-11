@@ -3,6 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
   <test thread-count="5" name="Unit1(failed)">
     <classes>
+      <class name="theInternet.tests.FileDownload">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="chrome"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- theInternet.tests.FileDownload -->
       <class name="theInternet.tests.DragNDrop">
         <methods>
           <include name="checkbox"/>
@@ -10,13 +17,20 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- theInternet.tests.DragNDrop -->
-      <class name="theInternet.tests.DisappearingElements">
+      <class name="theInternet.tests.NotificationMessage">
         <methods>
+          <include name="notificationCheck"/>
           <include name="beforeMethod"/>
-          <include name="portfolio"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- theInternet.tests.DisappearingElements -->
+      </class> <!-- theInternet.tests.NotificationMessage -->
+      <class name="theInternet.tests.FormAuth">
+        <methods>
+          <include name="login"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- theInternet.tests.FormAuth -->
     </classes>
   </test> <!-- Unit1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
