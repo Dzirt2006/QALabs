@@ -8,7 +8,7 @@ import frameworks.BasePage;
 import frameworks.ElementSearchers;
 import theInternet.pages.LoginPage;
 
-public class Login extends TheInternetTestBase {
+public class FormAuth extends TheInternetTestBase {
 
 	@Test
 	public void login() {
