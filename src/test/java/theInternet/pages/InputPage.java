@@ -11,7 +11,6 @@ public class InputPage extends InputField {
 	private WebElement mappedElement;
 
 	public InputPage(WebDriver driver, String url) {
-		// TODO Auto-generated constructor stub
 		super(driver, url);
 	}
 

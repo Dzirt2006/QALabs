@@ -11,4 +11,11 @@ public interface ScroolActions {
 		executor.executeScript("arguments[0].scrollIntoView(true);", element);    
 		element.click();
 	}
+	
+	default void scrollingDown(WebDriver driver) {
+			String script = "window.scrollTo(0, document.body.scrollHeight);";
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
+			jse.executeScript(script);
+	}
+
 }
