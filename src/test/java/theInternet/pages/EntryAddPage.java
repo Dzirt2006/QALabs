@@ -13,7 +13,6 @@ public class EntryAddPage extends ModalWindow {
 
 	public EntryAddPage(String url, WebDriver driver) {
 		super(url, driver);
-		// TODO Auto-generated constructor stub
 	}
 
 	String redirect = "/entry_ad";
@@ -25,33 +24,23 @@ public class EntryAddPage extends ModalWindow {
 	}
 
 	public EntryAddPage refresh() {
-		// TODO Auto-generated method stub
 		super.refresh();
-		sleep(3000);
+		while (!modalIsVisible()) {
+			super.refresh();
+		}
 		return this;
 	}
 
 	public EntryAddPage closeModalWindow() {
 		super.closeModalWindow(closeXPath);
-//		WebElement close = waitVisibility(driver, closeXPath);
-//		close.click();
 		return this;
 	}
 
 	public boolean modalIsVisible() {
-//		return waitVisibility(driver, closeXPath).isDisplayed();
 		return super.modalIsVisible(closeXPath);
 	}
 
 	public EntryAddPage reenableModal() {
-//		sleep(3000);
-//		WebElement activate = elementByXpath(clickable, driver);
-//		if (activate.isDisplayed() && activate.isEnabled()) {
-//			activate.click();
-//		} else {
-//			sleep(1500);
-//			activate.click();
-//		}
 		super.reenableModal(clickable);
 		return this;
 	}

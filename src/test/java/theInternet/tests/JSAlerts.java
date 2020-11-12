@@ -9,7 +9,7 @@ import theInternet.pages.JSAlertsPage;
 public class JSAlerts extends TheInternetTestBase {
 	private JSAlertsPage page;
 
-	@Test
+	@Test(invocationCount = 1)
 	public void jsAlerts() {
 		String expected = "You successfuly clicked an alert";
 		String result = page.clickOnJSAlerts().pickAlert().acceptAlert().checkResult();
@@ -17,7 +17,7 @@ public class JSAlerts extends TheInternetTestBase {
 		Assert.assertEquals(result, expected);
 	}
 
-	@Test
+	@Test(invocationCount = 1)
 	public void jsConfirm() {
 		String expected = "You clicked: Ok";
 		String result = page.clickOnJSConfirm().pickAlert().acceptAlert().checkResult();
@@ -25,7 +25,7 @@ public class JSAlerts extends TheInternetTestBase {
 		Assert.assertEquals(result, expected);
 	}
 
-	@Test
+	@Test(invocationCount = 1)
 	public void jsPrompt() {
 		String prompt = "Hello World!";
 		String expected = "You entered: " + prompt;

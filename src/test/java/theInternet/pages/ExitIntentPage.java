@@ -12,11 +12,9 @@ public class ExitIntentPage extends ModalWindow implements MouseActions {
 
 	public ExitIntentPage(String url, WebDriver driver) {
 		super(url, driver);
-		// TODO Auto-generated constructor stub
 	}
 
 	public ExitIntentPage navigateTo() {
-		// TODO Auto-generated method stub
 		super.navigateTo(urlDirect);
 		return this;
 	}
@@ -27,7 +25,7 @@ public class ExitIntentPage extends ModalWindow implements MouseActions {
 	}
 
 	public ExitIntentPage moveMouseOut() {
-		sleep(3000);
+		implisitWait(driver,1000);
 		moveMouseToVeiwportPane(driver);
 		return this;
 	}

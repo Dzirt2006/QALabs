@@ -25,7 +25,7 @@ public class NotificationMessagePage extends Notifications {
 	}
 
 	public String getNoteificationText() {
-		sleep(1500);
+//		implisitWait(driver,1000);
 		return super.getNoteificationText(noteId).trim();
 	}
 }

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import theInternet.pages.NotificationMessagePage;
 
 public class NotificationMessage extends TheInternetTestBase {
-	@Test
+	@Test(invocationCount = 10)
 	public void notificationCheck() {
 		String notificationMessage = new NotificationMessagePage(BaseUrl, driver).navigateTo().generateNotification()
 				.getNoteificationText();

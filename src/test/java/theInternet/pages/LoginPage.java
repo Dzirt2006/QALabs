@@ -25,7 +25,7 @@ public class LoginPage extends BasePage implements ElementSearchers {
 		elementById(userId, driver).sendKeys(user);
 		elementById(passwordId, driver).sendKeys(password);
 		elementByXpath(buttonXPath, driver).click();
-		sleep(1000);
+//		implisitWait(driver,1000)
 		return this;
 	}
 

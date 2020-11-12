@@ -24,18 +24,23 @@ public class DisappearingElementsPage extends BasePage implements ElementSearche
 	}
 
 	public DisappearingElementsPage getAllButtons() {
-		sleep(1500);
 		buttons = elementsByXpath(xpath, driver);
 		return this;
 	}
 
 	public int getAmountOfButtons() {
-		sleep(3000);
 		return elementsByXpath(xpath, driver).size();
 	}
 
 	public DisappearingElementsPage refresh() {
 		super.refresh();
+		return this;
+	}
+
+	public DisappearingElementsPage refreshUntilAppear(int previousState) {
+		while (getAmountOfButtons() == previousState) {
+			super.refresh();
+		}
 		return this;
 	}
 

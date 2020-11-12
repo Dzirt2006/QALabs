@@ -10,7 +10,7 @@ public class AlertBox extends BasePage {
 	}
 
 	public Alert switchToAlert() {
-		sleep(1000);
+		implisitWait(driver, 1000);
 		Alert alert = driver.switchTo().alert();
 		return alert;
 	}
