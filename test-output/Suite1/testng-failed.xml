@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
   <test thread-count="5" name="Unit1(failed)">
     <classes>
-      <class name="theInternet.tests.DisappearingElements">
+      <class name="theInternet.tests.KeyPresses">
         <methods>
           <include name="beforeMethod"/>
-          <include name="portfolio"/>
+          <include name="keyPress"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- theInternet.tests.DisappearingElements -->
-      <class name="theInternet.tests.DragNDrop">
-        <methods>
-          <include name="checkbox"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- theInternet.tests.DragNDrop -->
+      </class> <!-- theInternet.tests.KeyPresses -->
     </classes>
   </test> <!-- Unit1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

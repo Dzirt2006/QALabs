@@ -1,5 +1,3 @@
-src/test/java/com/my_shopper/www/secret.java
-target/test-classes/com/my_shopper/www/secret.class
-target/
 test-output/
+target/
 debug.log
