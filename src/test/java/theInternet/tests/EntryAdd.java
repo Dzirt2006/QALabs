@@ -7,7 +7,8 @@ import theInternet.pages.EntryAddPage;
 
 public class EntryAdd extends TheInternetTestBase {
 
-	@Test
+	
+	@Test(invocationCount = 1)
 	public void home() {
 
 		boolean windowIsVisible = new EntryAddPage(BaseUrl, driver).navigateTo().closeModalWindow().reenableModal()

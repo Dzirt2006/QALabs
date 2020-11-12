@@ -26,4 +26,9 @@ public interface Waiters {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 	}
 
+	default WebElement waitForClickable(WebDriver driver, WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, 3000);
+		return wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+
 }

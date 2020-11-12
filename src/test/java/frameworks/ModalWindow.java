@@ -7,7 +7,6 @@ public abstract class ModalWindow extends BasePage implements ElementSearchers {
 
 	public ModalWindow(String url, WebDriver driver) {
 		super(url, driver);
-		// TODO Auto-generated constructor stub
 	}
 
 	public abstract ModalWindow navigateTo();
@@ -22,12 +21,11 @@ public abstract class ModalWindow extends BasePage implements ElementSearchers {
 	}
 
 	public void reenableModal(String clickable) {
-		sleep(3000);
-		WebElement activate = elementByXpath(clickable, driver);
-		if (activate.isDisplayed() && activate.isEnabled()) {
+
+		WebElement activate = waitForClickable(driver, elementByXpath(clickable, driver));
+		if (activate.isEnabled()) {
 			activate.click();
 		} else {
-			sleep(1500);
 			activate.click();
 		}
 	}
