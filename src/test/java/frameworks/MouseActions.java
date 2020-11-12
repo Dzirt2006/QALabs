@@ -58,15 +58,15 @@ public interface MouseActions {
 		xOffset = (xOffset - xOffset1);
 //		yOffset = (yOffset - yOffset1) + 20;
 //		new Actions(driver).dragAndDropBy(from, xOffset, yOffset + 100).build().perform();
-//		new Actions(driver).dragAndDrop(from, to).build().perform();
+		new Actions(driver).dragAndDrop(from, to).build().perform();
 
 //		new Actions(driver).clickAndHold(from).moveByOffset(xOffset, yOffset + 100).release().build().perform();
 
 		// mouse release doen't work in chrome
-		Actions builder = new Actions(driver);
-		Action dragAndDrop = builder.clickAndHold(from).moveByOffset(xOffset, yOffset + 100).click().release(from)
-				.build();
-		dragAndDrop.perform();
+//		Actions builder = new Actions(driver);
+//		Action dragAndDrop = builder.clickAndHold(from).moveByOffset(xOffset, yOffset + 100).click().release(from)
+//				.build();
+//		dragAndDrop.perform();
 
 //		Robot robot = null;
 //		try {
