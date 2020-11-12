@@ -25,12 +25,13 @@ public class InFinityScrollPage extends BasePage implements ScroolActions, Eleme
 		return this;
 	}
 
-	public boolean footerIsDisplayed() {
-		return footer.isEnabled();
+	public long getPageHeight() {
+		return getPageHeight(driver);
 	}
 
 	public InFinityScrollPage scrollDown() {
 		scrollingDown(driver);
+		sleepThread(300);
 		return this;
 	}
 

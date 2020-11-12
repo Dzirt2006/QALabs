@@ -1,16 +1,18 @@
 package theInternet.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import theInternet.pages.InFinityScrollPage;
 
 public class InFinityScroll extends TheInternetTestBase {
 
-	@Test
+	@Test(invocationCount = 10)
 	public void scrooling() {
-		boolean footerDisplayed = new InFinityScrollPage(BaseUrl, driver).navigateTo().getFooter().scrollDown()
-				.footerIsDisplayed();
-		System.out.println(footerDisplayed);
+		InFinityScrollPage page = new InFinityScrollPage(BaseUrl, driver).navigateTo();
+		long expectedPageHeight = page.getFooter().getPageHeight();
+		long currentPageHeight = page.scrollDown().scrollDown().getPageHeight();
+		Assert.assertNotEquals(expectedPageHeight, currentPageHeight);
 	}
 
 }
