@@ -3,16 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="theInternet.tests.JSAlerts">
+      <class name="theInternet.tests.JSError">
         <methods>
           <include name="beforeMethod"/>
-          <include name="jsPrompt"/>
-          <include name="before"/>
-          <include name="jsAlerts"/>
           <include name="afterMethod"/>
-          <include name="jsConfirm"/>
+          <include name="jsError"/>
         </methods>
-      </class> <!-- theInternet.tests.JSAlerts -->
+      </class> <!-- theInternet.tests.JSError -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
