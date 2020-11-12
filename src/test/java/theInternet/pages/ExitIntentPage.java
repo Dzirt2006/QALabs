@@ -25,7 +25,7 @@ public class ExitIntentPage extends ModalWindow implements MouseActions {
 	}
 
 	public ExitIntentPage moveMouseOut() {
-//		implisitWait(driver,1000)
+		implisitWait(driver,1000);
 		moveMouseToVeiwportPane(driver);
 		return this;
 	}

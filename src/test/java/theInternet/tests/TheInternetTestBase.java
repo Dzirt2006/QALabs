@@ -17,7 +17,6 @@ public class TheInternetTestBase {
 		manager.loadConfigurations();
 		driver = manager.driver;
 		BaseUrl = manager.baseUrl;
-		System.out.println(BaseUrl);
 	}
 
 	@AfterMethod

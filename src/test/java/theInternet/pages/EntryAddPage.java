@@ -25,6 +25,9 @@ public class EntryAddPage extends ModalWindow {
 
 	public EntryAddPage refresh() {
 		super.refresh();
+		while (!modalIsVisible()) {
+			super.refresh();
+		}
 		return this;
 	}
 

@@ -7,7 +7,7 @@ import theInternet.pages.FileDownloader;
 
 public class FileDownload extends TheInternetTestBase {
 
-	@Test
+	@Test(invocationCount = 10)
 	public void chrome() {
 
 		boolean loadStatus = new FileDownloader(BaseUrl, driver).navigateTo().getListofAnchors()

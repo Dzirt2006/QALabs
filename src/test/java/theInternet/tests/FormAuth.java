@@ -7,7 +7,7 @@ import theInternet.pages.LoginPage;
 
 public class FormAuth extends TheInternetTestBase {
 
-	@Test(invocationCount = 10)
+	@Test(invocationCount = 1)
 	public void login() {
 		String user = "tomsmith";
 		String password = "SuperSecretPassword!";

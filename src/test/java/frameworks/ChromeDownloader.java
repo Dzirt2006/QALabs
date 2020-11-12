@@ -31,7 +31,7 @@ public class ChromeDownloader extends BasePage implements ElementSearchers, Shad
 	private boolean check(WebElement expandedShadow) {
 		WebElement downloadBar = getDonwloadBar(expandedShadow);
 		while (downloadBar.isDisplayed()) {
-			sleep(1000);
+//			implisitWait(driver,1000);
 			downloadBar = getDonwloadBar(expandedShadow);
 		}
 		try {
