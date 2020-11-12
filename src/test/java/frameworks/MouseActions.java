@@ -25,25 +25,21 @@ public interface MouseActions {
 	}
 
 	default void moveMouseToVeiwportPane(WebDriver driver) {
-		Robot robot;
-		try {
-			robot = new Robot();
-			robot.mouseMove(600, 100);
-		} catch (AWTException e) {
-			e.printStackTrace();
-		}
-
+		mouseMover(600, 100);
 	}
 
 	default void moveMouseOnPage(WebDriver driver) {
+		mouseMover(600, 600);
+	}
+
+	default void mouseMover(int x, int y) {
 		Robot robot;
 		try {
 			robot = new Robot();
-			robot.mouseMove(600, 600);
+			robot.mouseMove(x, y);
 		} catch (AWTException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	// drag and drop
@@ -65,8 +61,7 @@ public interface MouseActions {
 //		new Actions(driver).dragAndDrop(from, to).build().perform();
 
 //		new Actions(driver).clickAndHold(from).moveByOffset(xOffset, yOffset + 100).release().build().perform();
-		
-		
+
 		// mouse release doen't work in chrome
 		Actions builder = new Actions(driver);
 		Action dragAndDrop = builder.clickAndHold(from).moveByOffset(xOffset, yOffset + 100).click().release(from)

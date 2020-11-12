@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3963" started-at="2020-11-11T19:17:44 EST" finished-at="2020-11-11T19:17:48 EST">
+  <suite name="Default suite" duration-ms="1404" started-at="2020-11-11T20:35:05 EST" finished-at="2020-11-11T20:35:06 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3963" started-at="2020-11-11T19:17:44 EST" finished-at="2020-11-11T19:17:48 EST">
-      <class name="theInternet.tests.JSError">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.JSError@1f554b06]" name="beforeMethod" is-config="true" duration-ms="653" started-at="2020-11-11T19:17:44 EST" finished-at="2020-11-11T19:17:45 EST">
+    <test name="Default test" duration-ms="1404" started-at="2020-11-11T20:35:05 EST" finished-at="2020-11-11T20:35:06 EST">
+      <class name="theInternet.tests.KeyPresses">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:theInternet.tests.KeyPresses@1f554b06]" name="beforeMethod" is-config="true" duration-ms="681" started-at="2020-11-11T20:35:05 EST" finished-at="2020-11-11T20:35:05 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="jsError()[pri:0, instance:theInternet.tests.JSError@1f554b06]" name="jsError" duration-ms="3233" started-at="2020-11-11T19:17:45 EST" finished-at="2020-11-11T19:17:48 EST">
+        <test-method status="PASS" signature="keyPress()[pri:0, instance:theInternet.tests.KeyPresses@1f554b06]" name="keyPress" duration-ms="650" started-at="2020-11-11T20:35:05 EST" finished-at="2020-11-11T20:35:06 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsError -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.JSError@1f554b06]" name="afterMethod" is-config="true" duration-ms="56" started-at="2020-11-11T19:17:48 EST" finished-at="2020-11-11T19:17:48 EST">
+        </test-method> <!-- keyPress -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:theInternet.tests.KeyPresses@1f554b06]" name="afterMethod" is-config="true" duration-ms="56" started-at="2020-11-11T20:35:06 EST" finished-at="2020-11-11T20:35:06 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- theInternet.tests.JSError -->
+      </class> <!-- theInternet.tests.KeyPresses -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="theInternet.tests.JSError">
+      <class name="theInternet.tests.KeyPresses">
         <methods>
           <include name="beforeMethod"/>
+          <include name="keyPress"/>
           <include name="afterMethod"/>
-          <include name="jsError"/>
         </methods>
-      </class> <!-- theInternet.tests.JSError -->
+      </class> <!-- theInternet.tests.KeyPresses -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
