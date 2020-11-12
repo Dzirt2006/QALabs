@@ -1,11 +1,8 @@
 package theInternet.tests;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import frameworks.BasePage;
-import frameworks.ElementSearchers;
 import theInternet.pages.LoginPage;
 
 public class FormAuth extends TheInternetTestBase {
@@ -16,12 +13,9 @@ public class FormAuth extends TheInternetTestBase {
 		String password = "SuperSecretPassword!";
 		String redirectUrl = "/secure";
 
-		String curerentUrl = new LoginPage(BaseUrl, driver).navigateTo()
-				.enterAndSubmitData(user, password).getUrl();
-		
-		Assert.assertEquals(curerentUrl, BaseUrl+redirectUrl);
-	}
-	
+		String curerentUrl = new LoginPage(BaseUrl, driver).navigateTo().enterAndSubmitData(user, password).getUrl();
 
+		Assert.assertEquals(curerentUrl, BaseUrl + redirectUrl);
+	}
 
 }

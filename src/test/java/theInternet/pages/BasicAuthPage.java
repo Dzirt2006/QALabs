@@ -16,11 +16,9 @@ public class BasicAuthPage extends BasePage implements ElementSearchers {
 	public BasicAuthPage(String url, WebDriver driver) {
 		super(url, driver);
 		baseUrl = url.substring(7);
-		// TODO Auto-generated constructor stub
 	}
 
 	public BasicAuthPage navigateTo() {
-		// TODO Auto-generated method stub
 		super.navigateTo(direct);
 		return this;
 	}
