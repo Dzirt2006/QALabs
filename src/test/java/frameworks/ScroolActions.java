@@ -6,9 +6,22 @@ import org.openqa.selenium.WebElement;
 
 public interface ScroolActions {
 
-	public default void scroolIntoView(WebElement element,WebDriver driver) {
+	public default void scroolIntoView(WebElement element, WebDriver driver) {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].scrollIntoView(true);", element);    
+		executor.executeScript("arguments[0].scrollIntoView(true);", element);
 		element.click();
 	}
+
+	default void scrollingDown(WebDriver driver) {
+		String script = "window.scrollTo(0, document.body.scrollHeight);";
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript(script);
+	}
+
+	default long getPageHeight(WebDriver driver) {
+		String script = "return document.body.scrollHeight;";
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		return (long) jse.executeScript(script);
+	}
+
 }
