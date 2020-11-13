@@ -63,7 +63,7 @@ public interface MouseActions {
         int xAxis = (int) (10.0 * Math.random());
         int yAxis = (int) (10.0 * Math.random());
 
-        actions.dragAndDropBy(from, xOffset, yOffset).build().perform();
+        actions.dragAndDropBy(from, xAxis, yAxis).build().perform();
 //        actions.dragAndDropBy(to, xAxis, yAxis).build().perform();
 //        actions.dragAndDropBy(to, xAxis, yAxis).build().perform();
 //		new Actions(driver).clickAndHold(from).moveByOffset(xOffset, yOffset + 100).release().build().perform();
