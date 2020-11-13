@@ -7,7 +7,7 @@ import theInternet.pages.InFinityScrollPage;
 
 public class InFinityScroll extends TheInternetTestBase {
 
-	@Test(invocationCount = 10)
+	@Test(invocationCount = 1)
 	public void scrooling() {
 		InFinityScrollPage page = new InFinityScrollPage(BaseUrl, driver).navigateTo();
 		long expectedPageHeight = page.getFooter().getPageHeight();
