@@ -26,7 +26,7 @@ public interface Waiters {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 	}
 
-	default WebElement waitVisibility(WebElement element, WebDriver driver) {
+	default WebElement waitVisibility(WebElement element, WebDriver driver) { //does that work?
 		WebDriverWait wait = new WebDriverWait(driver, 3000);
 		return wait.until(ExpectedConditions.visibilityOf(element));
 	}
