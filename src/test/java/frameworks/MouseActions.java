@@ -32,6 +32,11 @@ public interface MouseActions {
 		mouseMover(600, 600);
 	}
 
+	default void mouseMoverToElement(WebDriver driver, WebElement element) {
+		Actions action = new Actions(driver);
+		action.moveToElement(element).build().perform();
+	}
+
 	default void mouseMover(int x, int y) {
 		Robot robot;
 		try {
@@ -56,14 +61,14 @@ public interface MouseActions {
 		// Find the xOffset and yOffset difference to find x and y offset needed in
 		// which from object required to dragged and dropped
 		xOffset = (xOffset - xOffset1);
-		yOffset = (yOffset - yOffset1)+180;
+		yOffset = (yOffset - yOffset1) + 180;
 //		new Actions(driver).dragAndDropBy(from, xOffset, yOffset + 100).build().perform();
 //		new Actions(driver).dragAndDrop(from, to).build().perform();
 		Actions actions = new Actions(driver);
-        int xAxis = (int) (10.0 * Math.random());
-        int yAxis = (int) (10.0 * Math.random());
+		int xAxis = (int) (10.0 * Math.random());
+		int yAxis = (int) (10.0 * Math.random());
 
-        actions.dragAndDropBy(from, xAxis, yAxis).build().perform();
+		actions.dragAndDropBy(from, xAxis, yAxis).build().perform();
 //        actions.dragAndDropBy(to, xAxis, yAxis).build().perform();
 //        actions.dragAndDropBy(to, xAxis, yAxis).build().perform();
 //		new Actions(driver).clickAndHold(from).moveByOffset(xOffset, yOffset + 100).release().build().perform();
