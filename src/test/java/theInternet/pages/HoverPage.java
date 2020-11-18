@@ -28,7 +28,7 @@ public class HoverPage extends BasePage implements MouseActions, ElementSearcher
 //	WebElement user1;;
 
 	public HoverPage hoverOnFirstUser() {
-		WebElement user1 = waitVisibility(driver, userXpath);
+		WebElement user1 = waitVisibilityXPath(driver, userXpath);
 		mouseMoverToElement(driver, user1);
 		return this;
 	}
@@ -37,7 +37,7 @@ public class HoverPage extends BasePage implements MouseActions, ElementSearcher
 //	WebElement user1Hover;
 
 	public String getHoverText() {
-		return waitVisibility(driver, hoverXpath).getText();
+		return waitVisibilityXPath(driver, hoverXpath).getText();
 	}
 
 }

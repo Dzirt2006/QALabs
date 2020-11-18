@@ -26,7 +26,7 @@ public class IFrame extends BasePage implements IFrameManipulations, ElementSear
 	WebElement iframe;
 
 	public IFrame switchToFrame() {
-		waitVisibility(driver,
+		waitVisibilityXPath(driver,
 				"//div[@role='alertdialog']//div[@role='group']//div[@role='button']/button[@role='presentation']")
 						.click();
 		switchToIFrame("mce_0_ifr", driver);

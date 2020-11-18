@@ -21,12 +21,17 @@ public interface Waiters {
 		driver.manage().timeouts().implicitlyWait(ms, TimeUnit.MILLISECONDS);
 	}
 
-	default WebElement waitVisibility(WebDriver driver, String xpath) {
+	default WebElement waitVisibilityXPath(WebDriver driver, String xpath) {
 		WebDriverWait wait = new WebDriverWait(driver, 3000);
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 	}
 
-	default WebElement waitVisibility(WebElement element, WebDriver driver) { //does that work?
+	default WebElement waitVisibilityId(WebDriver driver, String id) {
+		WebDriverWait wait = new WebDriverWait(driver, 3000);
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
+	}
+
+	default WebElement waitVisibility(WebElement element, WebDriver driver) { // does that work?
 		WebDriverWait wait = new WebDriverWait(driver, 3000);
 		return wait.until(ExpectedConditions.visibilityOf(element));
 	}

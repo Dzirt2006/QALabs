@@ -12,12 +12,12 @@ public abstract class ModalWindow extends BasePage implements ElementSearchers {
 	public abstract ModalWindow navigateTo();
 
 	public void closeModalWindow(String closeXPath) {
-		WebElement close = waitVisibility(driver, closeXPath);
+		WebElement close = waitVisibilityXPath(driver, closeXPath);
 		close.click();
 	}
 
 	public boolean modalIsVisible(String closeXPath) {
-		return waitVisibility(driver, closeXPath).isDisplayed();
+		return waitVisibilityXPath(driver, closeXPath).isDisplayed();
 	}
 
 	public void reenableModal(String clickable) {
