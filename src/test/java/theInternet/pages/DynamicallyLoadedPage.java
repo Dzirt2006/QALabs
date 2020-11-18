@@ -35,7 +35,7 @@ public class DynamicallyLoadedPage extends BasePage implements ElementSearchers 
 	}
 
 	public boolean getExampleResult() {
-		return waitVisibility(driver, "//div[@id='finish']/h4[.='Hello World!']").isDisplayed();
+		return waitVisibilityXPath(driver, "//div[@id='finish']/h4[.='Hello World!']").isDisplayed();
 	}
 
 }

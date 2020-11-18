@@ -34,7 +34,7 @@ public class DynamicControlsPage extends BasePage implements ElementSearchers {
 	public boolean getAsyncElementsStatus() {
 		String checkBox = "//input[@id='checkbox']";
 		String texInpt = "//input[@type='text']";
-		return waitVisibility(driver, checkBox).isDisplayed() && waitVisibility(driver, texInpt).isEnabled();
+		return waitVisibilityXPath(driver, checkBox).isDisplayed() && waitVisibilityXPath(driver, texInpt).isEnabled();
 	}
 
 }
