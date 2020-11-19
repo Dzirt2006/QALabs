@@ -1,5 +1,7 @@
 package theInternet.pages;
 
+import java.net.URL;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -8,7 +10,9 @@ import frameworks.ElementSearchers;
 
 public class FileUploadPage extends BasePage implements ElementSearchers {
 	String direction = "/upload";
-	String filePath = "/home/alex/eclipse-workspace/theInternel/src/test/resources/UploadSmile.jpg";
+	URL url = ClassLoader.getSystemResource("UploadSmile.jpg");
+	String filePath = url.getFile();
+
 
 	public FileUploadPage(String url, WebDriver driver) {
 		super(url, driver);
