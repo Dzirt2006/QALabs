@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import theInternet.pages.OpeningnWindowPage;
 
-public class OpeningWindow extends TheInternetTestBase {
+public class MultipleWindows extends TheInternetTestBase {
 
 	@Test
 	public void newWindow() {
