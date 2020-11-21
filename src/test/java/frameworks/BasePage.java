@@ -2,7 +2,7 @@ package frameworks;
 
 import org.openqa.selenium.WebDriver;
 
-public abstract class BasePage implements Waiters{
+public abstract class BasePage implements Waiters,PageLoad{
 	protected WebDriver driver;
 	private String baseUrl;
 
