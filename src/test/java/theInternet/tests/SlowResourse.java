@@ -8,7 +8,7 @@ import theInternet.pages.SlowResoursePage;
 public class SlowResourse extends TheInternetTestBase {
 	@Test
 	public void slowRes() {
-		int errors = new SlowResoursePage(BaseUrl, driver).navigateTo().isAnyErrors();
+		int errors = new SlowResoursePage(BaseUrl, driver).navigateTo().waitForLoaded().isAnyErrors();
 		Assert.assertNotEquals(errors, 0);
 	}
 }

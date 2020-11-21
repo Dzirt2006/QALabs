@@ -20,6 +20,13 @@ public class SlowResoursePage extends WindowHandler implements JSErrorsHandling,
 		return this;
 	}
 
+	public SlowResoursePage waitForLoaded() {
+		while (!pagePoaded(driver)) {
+			sleepThread(1000);
+		}
+		return this;
+	}
+
 	public int isAnyErrors() {
 		// we can add here the waiter
 		List<String> listOfErrors = getError(driver);

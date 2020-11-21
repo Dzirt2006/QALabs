@@ -24,8 +24,8 @@ public class DragNDropPage extends BasePage implements MouseActions, ElementSear
 
 	public DragNDropPage dragAToB() {
 		System.out.println(getAHeader());
-		WebElement a = elementById(idA, driver);
-		WebElement b = elementById(idB, driver);
+		WebElement a = waitVisibilityId(driver, idA);
+		WebElement b = waitVisibilityId(driver, idB);
 		dragNDrop(driver, b, a);
 		System.out.println(getAHeader());
 		return this;

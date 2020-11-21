@@ -34,7 +34,8 @@ public class ForgotPasswordPage extends BasePage implements ElementSearchers {
 	}
 
 	public String getEmail() {
-		elementByXpath("//div[@id='big_container']/div[@class='email_list']/div[1]", driver).click();
+		sleepThread(1500);// need to w8 for email
+		waitVisibilityXPath(driver, "//div[@id='big_container']/div[@class='email_list']/div[1]").click();
 		return waitVisibilityXPath(driver,
 				"//div[@id='big_container']//div[@class='email_item extra_bottom_border']//p[@class='from_item']")
 						.getText().substring(6);
