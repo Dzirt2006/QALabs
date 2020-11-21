@@ -15,4 +15,9 @@ public interface JSExecution {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		return js.executeScript(script, element);
 	}
+
+	default Object jsExec(WebDriver driver, WebElement element1, WebElement element2, String script) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		return js.executeScript(script, element1, element2);
+	}
 }
