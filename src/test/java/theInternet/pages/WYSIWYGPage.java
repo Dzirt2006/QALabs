@@ -25,8 +25,6 @@ public class WYSIWYGPage extends BasePage implements IFrameManipulations, Elemen
 			editor = waitVisibilityId(driver, "mce_0_ifr");
 		}
 		switchToIFrame(editor, driver);
-		waitVisibilityId(driver, "tinymce").isSelected();// without click on inpt field bottom parameter wouldn't be
-		// changed
 	}
 
 	public WYSIWYGPage typePStrong() {
@@ -37,9 +35,9 @@ public class WYSIWYGPage extends BasePage implements IFrameManipulations, Elemen
 	}
 
 	public boolean checkPStrong() {
-		String pXpath = "//div[@class='mce-container-body mce-stack-layout']/div[4]/div/div[1]/div[1]";
-		String parametr = "//div[@class='mce-container-body mce-stack-layout']/div[4]/div/div[1]/div[3]";
-		return checkElement(pXpath).equals("p") && checkElement(parametr).equals("strong");
+		String pXpath = "//*[@id='mceu_28-body']";
+		switchBackToParent(driver);
+		return checkElement(pXpath).equals("p » strong");
 	}
 
 	private String checkElement(String xpath) {
