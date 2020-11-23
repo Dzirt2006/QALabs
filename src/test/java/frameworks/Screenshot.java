@@ -12,6 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 
+import theInternet.tests.TheInternetTestBase;
+
 public class Screenshot {
 
 	private static String fileName(ITestContext iTestContext) {

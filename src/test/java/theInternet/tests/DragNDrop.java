@@ -1,10 +1,13 @@
 package theInternet.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import frameworks.FailListener;
 import theInternet.pages.DragNDropPage;
 
+//@Listeners(FailListener.class)
 public class DragNDrop extends TheInternetTestBase {
 
 	@Test
