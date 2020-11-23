@@ -27,4 +27,13 @@ public class AddRemove extends TheInternetTestBase{
 		Assert.assertEquals(elementCount, addClicks - deleteClicks);
 
 	}
+	
+
+	@Test
+	public void fds() {
+		String[] s=new String[] {"some","sdsd"};
+		for(String j:s) {
+			System.out.println(j);
+		}
+	}
 }

@@ -12,6 +12,19 @@ public class WYSIWYG extends TheInternetTestBase {
 		boolean actual = new WYSIWYGPage(BaseUrl, driver).navigateTo().typePStrong().checkPStrong();
 
 		Assert.assertNotEquals(actual, true);
-
+		
+	}
+	
+	
+	@Test
+	public void test() {
+	
+		
+		boolean i=5==5.00;
+		System.out.println(i);
+		
+	}
+	public void cheeck(int x) {
+		
 	}
 }
