@@ -1,8 +1,22 @@
 package demoqa;
 
 public class Student {
-	String lastName, firstName, dob, email, houseNumber, street, state, city, postalCode, mobile, gender, subjects,
-			hobby;
+	public String lastName, firstName, dob, email, houseNumber, street, state, city, postalCode, mobile, gender,
+			subjects, hobby;
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+	public String getHobby() {
+		return hobby;
+	}
+	public String getEmail() {
+		return email;
+	}
 
 	public void setCity(String city) {
 		this.city = city;
@@ -29,7 +43,9 @@ public class Student {
 	}
 
 	public void setLastFirst(String lastFirst) {
-		System.out.println(lastFirst);
+		String[] firstLast = lastFirst.split(",");
+		this.firstName = firstLast[1];
+		this.lastName = firstLast[0];
 	}
 
 	public void setMobile(String mobile) {
