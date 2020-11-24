@@ -14,7 +14,7 @@ public class NewTest {
 		for (Student element : list) {
 
 			System.out.println("YOHOO " + element.getFirstName() + " " + element.getLastName() + " "
-					+ element.getEmail() + " " + element.getHobby());
+					+ element.getEmail() + " " + element.getHobby()+" "+element.city);
 		}
 	}
 }

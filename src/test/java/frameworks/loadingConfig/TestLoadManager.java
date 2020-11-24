@@ -10,10 +10,10 @@ public class TestLoadManager {
 	public String baseUrl;
 	private String driverName;
 
-	public void loadConfigurations() {
+	public void loadConfigurations(String fileName) {
 		HashMap<String, String> configs = null;
 		try {
-			configs = new ConfigurationProvider().getDataFromTheFile("config.properties");
+			configs = new ConfigurationProvider().getDataFromTheFile(fileName);
 		} catch (IOException e) {
 			throw new RuntimeException("Config file does not exist.");
 		}

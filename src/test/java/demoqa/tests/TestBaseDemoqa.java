@@ -1,4 +1,4 @@
-package theInternet.tests;
+package demoqa.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -6,17 +6,16 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import frameworks.Screenshot;
 import frameworks.loadingConfig.TestLoadManager;
 
-public class TheInternetTestBase {
+public class TestBaseDemoqa {
 	public WebDriver driver;
-	protected String BaseUrl;// = "http://the-internet.herokuapp.com/";
+	protected String BaseUrl;
 
 	@BeforeMethod
 	public void beforeMethod(ITestContext context) {
 		TestLoadManager manager = new TestLoadManager();
-		manager.loadConfigurations("configTheInternet.properties");
+		manager.loadConfigurations("configDemoqa.properties");
 		driver = manager.driver;
 		BaseUrl = manager.baseUrl;
 		context.setAttribute("driver", driver);
@@ -24,7 +23,7 @@ public class TheInternetTestBase {
 
 	@AfterMethod
 	public void afterMethod(ITestResult result) {
-		driver.close();
+//		driver.close();
 	}
 
 }

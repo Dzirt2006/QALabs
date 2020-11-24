@@ -2,7 +2,9 @@ package demoqa;
 
 public class Student {
 	public String lastName, firstName, dob, email, houseNumber, street, state, city, postalCode, mobile, gender,
-			subjects, hobby;
+			 hobby;
+	
+	public String[] subjects;
 
 	public String getFirstName() {
 		return firstName;
@@ -65,7 +67,7 @@ public class Student {
 	}
 
 	public void setSubjects(String subjects) {
-		this.subjects = subjects;
+		this.subjects = subjects.split(";");
 	}
 
 }

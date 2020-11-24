@@ -17,4 +17,17 @@ public interface KeyPressers {
 		}
 	}
 
+	default void pressCtrlA() {
+		Robot robot;
+		try {
+			robot = new Robot();
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_A);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyRelease(KeyEvent.VK_A);
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
+	}
+
 }

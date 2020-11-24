@@ -18,7 +18,6 @@ public class CSVRead {
 
 	@SuppressWarnings("deprecation")
 	public List<Student> csvRead(String path) {
-
 		String[] columns = new String[] { "lastFirst", "dob", "email", "houseNumber", "street", "state", "city",
 				"postalCode", "mobile", "gender", "subjects", "hobby" };
 		final ColumnPositionMappingStrategy<Student> strategy = new ColumnPositionMappingStrategy<>();
@@ -34,11 +33,8 @@ public class CSVRead {
 			e.printStackTrace();
 		}
 		CsvToBean csvToBean = new CsvToBean();
-
-
 		List<Student> list = csvToBean.parse(strategy, csvReader);
 		return list;
 	}
-
 
 }
