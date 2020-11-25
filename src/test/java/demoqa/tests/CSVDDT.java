@@ -10,6 +10,6 @@ public class CSVDDT extends TestBaseDemoqa {
 	@Test
 	public void csv() {
 		CSVPage page=new CSVPage(BaseUrl, driver).navigateTo().getDataFromCSV();
-		page.fillUpForm(0);
+		page.fillUpForm(1);
 	}
 }

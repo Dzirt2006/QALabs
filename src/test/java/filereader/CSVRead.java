@@ -12,7 +12,7 @@ import com.opencsv.CSVReader;
 import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.CsvToBean;
 
-import demoqa.Student;
+import demoqa.tests.Student;
 
 public class CSVRead {
 

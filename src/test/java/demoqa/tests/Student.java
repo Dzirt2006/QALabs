@@ -1,9 +1,8 @@
-package demoqa;
+package demoqa.tests;
 
 public class Student {
-	public String lastName, firstName, dob, email, houseNumber, street, state, city, postalCode, mobile, gender,
-			 hobby;
-	
+	public String lastName, firstName, dob, email, houseNumber, street, state, city, postalCode, mobile, gender, hobby;
+
 	public String[] subjects;
 
 	public String getFirstName() {
@@ -13,9 +12,11 @@ public class Student {
 	public String getLastName() {
 		return lastName;
 	}
+
 	public String getHobby() {
 		return hobby;
 	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -51,7 +52,12 @@ public class Student {
 	}
 
 	public void setMobile(String mobile) {
-		this.mobile = mobile;
+		String[] mobileArr = mobile.split("-");
+		String concated = "";
+		for (int i = 0; i < mobileArr.length; i++) {
+			concated += mobileArr[i];
+		}
+		this.mobile = concated;
 	}
 
 	public void setPostalCode(String postalCode) {
