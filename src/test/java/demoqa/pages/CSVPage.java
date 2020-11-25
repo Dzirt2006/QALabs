@@ -2,8 +2,8 @@ package demoqa.pages;
 
 import org.openqa.selenium.WebDriver;
 
-import demoqa.tests.Student;
 import filereader.CSVRead;
+import filereader.Student;
 
 public class CSVPage extends MainForm {
 

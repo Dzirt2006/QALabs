@@ -1,25 +1,12 @@
-package demoqa.tests;
+package filereader;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "personAS")
 public class Student {
 	public String lastName, firstName, dob, email, houseNumber, street, state, city, postalCode, mobile, gender, hobby;
 
 	public String[] subjects;
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public String getHobby() {
-		return hobby;
-	}
-
-	public String getEmail() {
-		return email;
-	}
 
 	public void setCity(String city) {
 		this.city = city;

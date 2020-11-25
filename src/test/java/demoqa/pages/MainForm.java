@@ -9,8 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import demoqa.tests.Student;
 import filereader.CSVRead;
+import filereader.Student;
 import frameworks.BasePage;
 import frameworks.ElementSearchers;
 import frameworks.KeyPressers;
