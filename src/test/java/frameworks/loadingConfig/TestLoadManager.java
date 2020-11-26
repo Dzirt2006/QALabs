@@ -9,17 +9,25 @@ public class TestLoadManager {
 	public WebDriver driver;
 	public String baseUrl;
 	private String driverName;
+	public String dbName;
+	public String username;
+	public String password;
+	public String query;
 
-	public void loadConfigurations() {
+	public void loadConfigurations(String fileName) {
 		HashMap<String, String> configs = null;
 		try {
-			configs = new ConfigurationProvider().getDataFromTheFile("config.properties");
+			configs = new ConfigurationProvider().getDataFromTheFile(fileName);
 		} catch (IOException e) {
 			throw new RuntimeException("Config file does not exist.");
 		}
 		baseUrl = configs.get(ConfigurationParameters.Url);
 		driverName = configs.get(ConfigurationParameters.Driver);
 		driver = new DriverManager(driverName).getDriver();
+		dbName = configs.get(ConfigurationParameters.dbName);
+		username = configs.get(ConfigurationParameters.username);
+		password = configs.get(ConfigurationParameters.password);
+		query = configs.get(ConfigurationParameters.query);
 	}
 
 }

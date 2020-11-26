@@ -16,7 +16,7 @@ public class TheInternetTestBase {
 	@BeforeMethod
 	public void beforeMethod(ITestContext context) {
 		TestLoadManager manager = new TestLoadManager();
-		manager.loadConfigurations();
+		manager.loadConfigurations("configTheInternet.properties");
 		driver = manager.driver;
 		BaseUrl = manager.baseUrl;
 		context.setAttribute("driver", driver);

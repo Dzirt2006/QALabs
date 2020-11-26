@@ -15,16 +15,4 @@ public class WYSIWYG extends TheInternetTestBase {
 		
 	}
 	
-	
-	@Test
-	public void test() {
-	
-		
-		boolean i=5==5.00;
-		System.out.println(i);
-		
-	}
-	public void cheeck(int x) {
-		
-	}
 }
