@@ -1,16 +1,22 @@
 package demoqa.tests;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import filereader.DataProvider;
+import filereader.Student;
 import frameworks.loadingConfig.TestLoadManager;
 
 public class TestBaseDemoqa {
 	public WebDriver driver;
 	protected String BaseUrl;
+	List<Student> studentsList;
+	String fileName = "Student.csv";
 
 	@BeforeMethod
 	public void beforeMethod(ITestContext context) {
@@ -19,6 +25,10 @@ public class TestBaseDemoqa {
 		driver = manager.driver;
 		BaseUrl = manager.baseUrl;
 		context.setAttribute("driver", driver);
+		if (fileName != null) {
+			studentsList = new DataProvider().getStudentsFromFile(fileName);
+		}
+
 	}
 
 	@AfterMethod

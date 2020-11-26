@@ -8,6 +8,27 @@ public class Student {
 
 	public String[] subjects;
 
+	public Student() {
+
+	}
+
+	public Student(String firstName, String lastName, String gender, String dob, String email, String houseNumber,
+			String street, String state, String city, String postalCode, String mobile, String[] subjects) {
+		this.city = city;
+		this.dob = dob;
+		this.email = email;
+		this.gender = gender;
+//		this.hobby = hobby;
+		this.houseNumber = houseNumber;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		setMobile(mobile);
+		this.state = state;
+		this.postalCode = postalCode;
+		this.street = street;
+		this.subjects = subjects;
+	}
+
 	public void setCity(String city) {
 		this.city = city;
 	}
@@ -21,6 +42,17 @@ public class Student {
 	}
 
 	public void setGender(String gender) {
+		switch (gender) {
+		case "M":
+			this.gender = "male";
+			break;
+		case "F":
+			this.gender = "female";
+			break;
+		default:
+			this.gender = gender;
+			break;
+		}
 		this.gender = gender;
 	}
 

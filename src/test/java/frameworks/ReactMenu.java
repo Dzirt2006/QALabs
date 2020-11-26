@@ -8,6 +8,7 @@ public interface ReactMenu extends Waiters, ElementSearchers {
 	default void fillMenu(String textValue, WebElement menuArea, WebDriver driver) {
 		String buttonXPath = "//*[text() = '" + textValue + "']";
 		waitVisibility(menuArea, driver).click();
-		elementByXpath(buttonXPath, menuArea).click();
+		waitVisibilityXPath(driver, buttonXPath).click();
+//		elementByXpath(buttonXPath, menuArea).click();
 	}
 }

@@ -17,11 +17,14 @@ import frameworks.KeyPressers;
 import frameworks.ReactDropdown;
 import frameworks.ReactMenu;
 
-public class MainForm extends BasePage implements ElementSearchers, KeyPressers, ReactMenu {
-	List<Student> list = null;
+public abstract class MainForm extends BasePage implements ElementSearchers, KeyPressers, ReactMenu {
+//	List<Student> list = null;
 
-	public MainForm(String url, WebDriver driver) {
+	Student student;
+
+	public MainForm(String url, WebDriver driver, Student student) {
 		super(url, driver);
+		this.student = student;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -55,55 +58,60 @@ public class MainForm extends BasePage implements ElementSearchers, KeyPressers,
 	@FindBy(how = How.ID, using = "submit")
 	private WebElement submit;
 
-	public MainForm fillUpForm(int studentIndex) {
-		Student student = list.get(studentIndex);
+	public MainForm fillUpForm() {
+//		Student student = list.get(studentIndex);
+		System.out.println(student.street + " " + student.houseNumber + " " + student.state + " " + student.city);
 		fillName(student.firstName, student.lastName);
 		fillEmail(student.email);
+		fillDoB(student.dob);
 		fillGender(student.gender);
 		fillNumber(student.mobile);
-		fillDoB(student.dob);
-		fillSubject(student.subjects);
+		
 		fillAddress(student.street + " " + student.houseNumber);
-		fillHobby(student.hobby);
 		fillState(student.state);
 		fillCity(student.city);
+		fillSubject(student.subjects);
+		fillHobby(student.hobby);
 		submit();
 		return this;
 	}
 
 	private void submit() {
+		sleepThread(500);
 		submit.click();
+//		waitForClickable(driver, submit).click();
 	}
 
 	private void fillGender(String gender) {
 		switch (gender) {
-		case "M":
-			elementByXpath("//*[@id='genterWrapper']/div[2]/div[1]/label", driver).click();
+		case "male":
+			waitForClickableByXpath(driver, "//*[@id='genterWrapper']/div[2]/div[1]/label").click();
 			break;
-		case "F":
-			elementByXpath("//*[@id='genterWrapper']/div[2]/div[2]/label", driver).click();
-			break;
-		case "O":
-			elementByXpath("//*[@id='genterWrapper']/div[2]/div[3]/label", driver).click();
+		case "female":
+			waitForClickableByXpath(driver, "//*[@id='genterWrapper']/div[2]/div[2]/label").click();
 			break;
 		default:
+			waitForClickableByXpath(driver, "//*[@id='genterWrapper']/div[2]/div[3]/label").click();
 			break;
 		}
+		sleepThread(500);
 	}
 
 	private void fillHobby(String hobby) {
-		switch (hobby) {
-		case "Sports":
-			elementByXpath("//*[@id='hobbiesWrapper']/div[2]/div[1]/label", driver).click();
-			break;
-		case "Reading":
-			elementByXpath("//*[@id='hobbiesWrapper']/div[2]/div[2]/label", driver).click();
-			break;
-		case "Music":
-			elementByXpath("//*[@id='hobbiesWrapper']/div[2]/div[3]/label", driver).click();
-			break;
-		default:
-			break;
+		if (hobby != null) {
+			switch (hobby) {
+			case "Sports":
+				elementByXpath("//*[@id='hobbiesWrapper']/div[2]/div[1]/label", driver).click();
+				break;
+			case "Reading":
+				elementByXpath("//*[@id='hobbiesWrapper']/div[2]/div[2]/label", driver).click();
+				break;
+			case "Music":
+				elementByXpath("//*[@id='hobbiesWrapper']/div[2]/div[3]/label", driver).click();
+				break;
+			default:
+				break;
+			}
 		}
 	}
 
@@ -121,12 +129,11 @@ public class MainForm extends BasePage implements ElementSearchers, KeyPressers,
 	}
 
 	private void fillNumber(String number) {
-		System.out.println(number);
 		this.userNumber.sendKeys(number);
 	}
 
 	private void fillDoB(String dob) {
-		this.dateOfBirthInput.click();
+		waitForClickable(driver, this.dateOfBirthInput).click();
 		pressCtrlA();
 		this.dateOfBirthInput.sendKeys(dob);
 		pressEnter();
@@ -146,6 +153,7 @@ public class MainForm extends BasePage implements ElementSearchers, KeyPressers,
 			implisitWait(driver, 500);
 			pressEnter();
 		}
+		sleepThread(500);
 	}
 
 }

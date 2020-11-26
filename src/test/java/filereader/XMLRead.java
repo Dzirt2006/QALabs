@@ -23,8 +23,6 @@ public class XMLRead {
 		try {
 			JAXBContext jaxbContext = JAXBContext.newInstance(Semester.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-//			Semester customer = (Semester) jaxbUnmarshaller.unmarshal(inputFile);
-//			customer.getFall().getPerson()[1].toString();
 			return (Semester) jaxbUnmarshaller.unmarshal(inputFile);
 		} catch (JAXBException e) {
 			e.printStackTrace();
