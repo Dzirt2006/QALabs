@@ -12,6 +12,7 @@ public class Student {
 
 	}
 
+	// constructor for xml
 	public Student(String firstName, String lastName, String gender, String dob, String email, String houseNumber,
 			String street, String state, String city, String postalCode, String mobile, String[] subjects) {
 		this.city = city;
@@ -27,6 +28,12 @@ public class Student {
 		this.postalCode = postalCode;
 		this.street = street;
 		this.subjects = subjects;
+	}
+
+	// constructor for db
+	public Student(String fname, String lName, String gender2, String dob2, String phone, String address, String state2,
+			String city2) {
+
 	}
 
 	public void setCity(String city) {

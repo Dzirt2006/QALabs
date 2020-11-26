@@ -27,8 +27,11 @@ public class TestBaseDemoqa {
 		context.setAttribute("driver", driver);
 		if (fileName != null) {
 			studentsList = new DataProvider().getStudentsFromFile(fileName);
+		} else {
+			String connectionString = "jdbc:mysql://localhost/" + manager.dbName + "?user=" + manager.username
+					+ "&password=" + manager.password + "&useUnicode=true&characterEncoding=UTF-8";
+			studentsList = new DataProvider().getStudentsFromDB(connectionString, manager.query);
 		}
-
 	}
 
 	@AfterMethod

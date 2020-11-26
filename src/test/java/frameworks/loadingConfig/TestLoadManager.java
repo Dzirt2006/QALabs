@@ -9,6 +9,10 @@ public class TestLoadManager {
 	public WebDriver driver;
 	public String baseUrl;
 	private String driverName;
+	public String dbName;
+	public String username;
+	public String password;
+	public String query;
 
 	public void loadConfigurations(String fileName) {
 		HashMap<String, String> configs = null;
@@ -20,6 +24,10 @@ public class TestLoadManager {
 		baseUrl = configs.get(ConfigurationParameters.Url);
 		driverName = configs.get(ConfigurationParameters.Driver);
 		driver = new DriverManager(driverName).getDriver();
+		dbName = configs.get(ConfigurationParameters.dbName);
+		username = configs.get(ConfigurationParameters.username);
+		password = configs.get(ConfigurationParameters.password);
+		query = configs.get(ConfigurationParameters.query);
 	}
 
 }

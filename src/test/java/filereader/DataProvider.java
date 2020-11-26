@@ -15,6 +15,11 @@ public class DataProvider {
 		return null;
 	}
 
+	public List<Student> getStudentsFromDB(String connectionString, String query) {
+
+		return null;
+	}
+
 	private String checkFile(String fileName) {
 		return fileName.substring(fileName.length() - 3);
 	}
