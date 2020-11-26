@@ -16,7 +16,8 @@ public class TestBaseDemoqa {
 	public WebDriver driver;
 	protected String BaseUrl;
 	List<Student> studentsList;
-	String fileName = "Student.csv";
+	String fileName;
+//	String fileName = "Student.csv";
 
 	@BeforeMethod
 	public void beforeMethod(ITestContext context) {

@@ -3,6 +3,7 @@ package filereader;
 import java.util.List;
 
 public class DataProvider {
+
 	public List<Student> getStudentsFromFile(String fileName) {
 		switch (checkFile(fileName)) {
 		case "xml":
@@ -17,7 +18,7 @@ public class DataProvider {
 
 	public List<Student> getStudentsFromDB(String connectionString, String query) {
 
-		return null;
+		return new DBStudentQ(connectionString, query).connectDb().getStudets();
 	}
 
 	private String checkFile(String fileName) {

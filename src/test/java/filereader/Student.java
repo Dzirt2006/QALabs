@@ -33,7 +33,15 @@ public class Student {
 	// constructor for db
 	public Student(String fname, String lName, String gender2, String dob2, String phone, String address, String state2,
 			String city2) {
-
+		this.city = city2;
+		this.dob = dob2;
+		this.email = "mail@mail.ru";
+		this.gender = gender2;
+		this.firstName = fname;
+		this.lastName = lName;
+		setMobile(phone);
+		this.state = state2;
+		this.street = address;
 	}
 
 	public void setCity(String city) {

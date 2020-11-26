@@ -66,7 +66,7 @@ public abstract class MainForm extends BasePage implements ElementSearchers, Key
 		fillDoB(student.dob);
 		fillGender(student.gender);
 		fillNumber(student.mobile);
-		
+
 		fillAddress(student.street + " " + student.houseNumber);
 		fillState(student.state);
 		fillCity(student.city);
@@ -148,12 +148,14 @@ public abstract class MainForm extends BasePage implements ElementSearchers, Key
 	}
 
 	private void fillSubject(String[] subject) {
-		for (String sbjct : subject) {
-			this.subjectsInput.sendKeys(sbjct);
-			implisitWait(driver, 500);
-			pressEnter();
+		if (subject != null) {
+			for (String sbjct : subject) {
+				this.subjectsInput.sendKeys(sbjct);
+				implisitWait(driver, 500);
+				pressEnter();
+			}
+			sleepThread(500);
 		}
-		sleepThread(500);
 	}
 
 }

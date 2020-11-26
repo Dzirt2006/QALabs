@@ -19,12 +19,18 @@ public class DBStudentQ extends DBConnector {
 		this.query = query;
 	}
 
+	@Override
+	public DBStudentQ connectDb() {
+		super.connectDb();
+		return this;
+	}
+
 	public List<Student> getStudets() {
 		ResultSet resultSet = super.query(query);
 		try {
 			while (resultSet.next()) {
-				String fname = resultSet.getString("");
-				String lName = resultSet.getString("");
+				String fname = resultSet.getString("first_name");
+				String lName = resultSet.getString("last_name");
 				String gender = gender(resultSet.getBoolean("isMale"));
 				String dob = dob(resultSet.getDate("birthdate"));
 				String phone = resultSet.getString("phone");
