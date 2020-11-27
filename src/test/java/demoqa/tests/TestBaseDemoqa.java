@@ -16,9 +16,9 @@ public class TestBaseDemoqa {
 	public WebDriver driver;
 	protected String BaseUrl;
 	List<Student> studentsList;
-	String fileName;
+//	String fileName;
 //	String fileName = "Student.csv";
-
+	String fileName = "Student.xml";
 	@BeforeMethod
 	public void beforeMethod(ITestContext context) {
 		TestLoadManager manager = new TestLoadManager();

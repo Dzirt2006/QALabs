@@ -1,6 +1,5 @@
 package demoqa.pages;
 
-import java.util.List;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -9,16 +8,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import filereader.CSVRead;
 import filereader.Student;
 import frameworks.BasePage;
 import frameworks.ElementSearchers;
 import frameworks.KeyPressers;
-import frameworks.ReactDropdown;
 import frameworks.ReactMenu;
 
 public abstract class MainForm extends BasePage implements ElementSearchers, KeyPressers, ReactMenu {
-//	List<Student> list = null;
 
 	Student student;
 
@@ -59,14 +55,12 @@ public abstract class MainForm extends BasePage implements ElementSearchers, Key
 	private WebElement submit;
 
 	public MainForm fillUpForm() {
-//		Student student = list.get(studentIndex);
 		System.out.println(student.street + " " + student.houseNumber + " " + student.state + " " + student.city);
 		fillName(student.firstName, student.lastName);
 		fillEmail(student.email);
 		fillDoB(student.dob);
 		fillGender(student.gender);
 		fillNumber(student.mobile);
-
 		fillAddress(student.street + " " + student.houseNumber);
 		fillState(student.state);
 		fillCity(student.city);
@@ -77,9 +71,7 @@ public abstract class MainForm extends BasePage implements ElementSearchers, Key
 	}
 
 	private void submit() {
-		sleepThread(500);
 		submit.click();
-//		waitForClickable(driver, submit).click();
 	}
 
 	private void fillGender(String gender) {
@@ -98,6 +90,7 @@ public abstract class MainForm extends BasePage implements ElementSearchers, Key
 	}
 
 	private void fillHobby(String hobby) {
+		System.out.println(hobby);
 		if (hobby != null) {
 			switch (hobby) {
 			case "Sports":
@@ -152,9 +145,8 @@ public abstract class MainForm extends BasePage implements ElementSearchers, Key
 			for (String sbjct : subject) {
 				this.subjectsInput.sendKeys(sbjct);
 				implisitWait(driver, 500);
-				pressEnter();
+				this.subjectsInput.sendKeys(Keys.TAB);
 			}
-			sleepThread(500);
 		}
 	}
 
