@@ -5,7 +5,9 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import filereader.DataProvider;
@@ -19,13 +21,11 @@ public class TestBaseDemoqa {
 //	String fileName;
 //	String fileName = "Student.csv";
 	String fileName = "Student.xml";
-	@BeforeMethod
-	public void beforeMethod(ITestContext context) {
+
+	@BeforeClass
+	public void beforeClass() {
 		TestLoadManager manager = new TestLoadManager();
 		manager.loadConfigurations("configDemoqa.properties");
-		driver = manager.driver;
-		BaseUrl = manager.baseUrl;
-		context.setAttribute("driver", driver);
 		if (fileName != null) {
 			studentsList = new DataProvider().getStudentsFromFile(fileName);
 		} else {
@@ -33,6 +33,15 @@ public class TestBaseDemoqa {
 					+ "&password=" + manager.password + "&useUnicode=true&characterEncoding=UTF-8";
 			studentsList = new DataProvider().getStudentsFromDB(connectionString, manager.query);
 		}
+	}
+
+	@BeforeMethod
+	public void beforeMethod(ITestContext context) {
+		TestLoadManager manager = new TestLoadManager();
+		manager.loadConfigurations("configDemoqa.properties");
+		driver = manager.driver;
+		BaseUrl = manager.baseUrl;
+		context.setAttribute("driver", driver);
 	}
 
 	@AfterMethod
