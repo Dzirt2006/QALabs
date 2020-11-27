@@ -1,6 +1,5 @@
 package demoqa.pages;
 
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +12,7 @@ import frameworks.BasePage;
 import frameworks.ElementSearchers;
 import frameworks.KeyPressers;
 import frameworks.ReactMenu;
+import frameworks.Table;
 
 public abstract class MainForm extends BasePage implements ElementSearchers, KeyPressers, ReactMenu {
 
@@ -68,6 +68,13 @@ public abstract class MainForm extends BasePage implements ElementSearchers, Key
 		fillHobby(student.hobby);
 		submit();
 		return this;
+	}
+
+	public String checkInput() {
+		String tableXpath = "//table//td[.='Student Name']";
+		WebElement element = waitVisibilityXPath(driver, tableXpath);
+		String script = "return arguments[0].nextElementSibling.innerText";
+		return (String) jsExec(driver, element, script);
 	}
 
 	private void submit() {

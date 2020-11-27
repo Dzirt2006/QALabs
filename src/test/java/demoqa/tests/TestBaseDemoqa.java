@@ -18,6 +18,8 @@ public class TestBaseDemoqa {
 	public WebDriver driver;
 	protected String BaseUrl;
 	List<Student> studentsList;
+	// if file name is empty all data will be taken from db, also it will open
+	// necessary file automatically, just send it to method
 //	String fileName;
 //	String fileName = "Student.csv";
 	String fileName = "Student.xml";

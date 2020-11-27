@@ -1,5 +1,6 @@
 package demoqa.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -10,16 +11,16 @@ public class AllTests extends TestBaseDemoqa {
 
 	@DataProvider(name = "data-provider")
 	public Object[] studentProvider() {
-		return new Object[] {  studentsList.get(0) ,  studentsList.get(1) , studentsList.get(2) };
+		return new Object[] { studentsList.get(0), studentsList.get(1), studentsList.get(2) };
 	}
 
-	
-	
 	@Test(dataProvider = "data-provider")
 	public void StudentTest(Student student) {
-		new Page(BaseUrl, driver, student).navigateTo().fillUpForm();
+		String expected = student.firstName + " " + student.lastName;
+		String actual = new Page(BaseUrl, driver, student).navigateTo().fillUpForm().checkInput();
+		Assert.assertEquals(actual, expected);
 	}
-	
+
 //	@Test
 //	public void firstStudent() {
 //		Student student = studentsList.get(0);
