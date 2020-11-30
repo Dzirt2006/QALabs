@@ -1,11 +1,10 @@
 package demoqa.tests;
 
+import demoqa.pages.Page;
+import filereader.Student;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import demoqa.pages.Page;
-import filereader.Student;
 
 public class AllTests extends TestBaseDemoqa {
 
