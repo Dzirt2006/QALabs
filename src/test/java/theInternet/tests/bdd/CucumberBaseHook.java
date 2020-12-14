@@ -2,8 +2,6 @@ package theInternet.tests.bdd;
 
 import frameworks.loadingConfig.TestLoadManager;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestContext;
-import org.testng.ITestResult;
 
 
 public class CucumberBaseHook {
