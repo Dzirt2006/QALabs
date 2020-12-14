@@ -2,3 +2,8 @@ test-output/
 target/
 debug.log
 /screenshots/
+bin/
+.idea/
+theInternel.iml
+.classpath
+.project
