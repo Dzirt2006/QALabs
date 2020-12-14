@@ -28,6 +28,11 @@ public class BasicAuthPage extends BasePage implements ElementSearchers {
 		return this;
 	}
 
+	public BasicAuthPage login(String user_password) {
+		driver.get("http://" + user_password + ":" + user_password + "@" + baseUrl + direct);
+		return this;
+	}
+
 	public boolean isLogedIn() {
 		try {
 			elementByXpath(xpathToComplete, driver);
