@@ -1,4 +1,4 @@
-package theInternet.tests.bdd;
+package bddTheInternet.stepDefenitions;
 
 import frameworks.loadingConfig.TestLoadManager;
 import org.openqa.selenium.WebDriver;
