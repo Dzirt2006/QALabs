@@ -1,4 +1,4 @@
-package theInternet.tests.bdd;
+package bddTheInternet.stepDefenitions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
