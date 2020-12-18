@@ -16,19 +16,13 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag 
+@tag
 Feature: Title of your feature
   I want to use this template for my feature file
-@tag1
-  Scenario Outline: As a user I want to use add and remove buttons
+
+  @tag1
+  Scenario: As a user I want to get a context menu on context clicking in the box
     Given I am on home page
-    And I need to redirect to add/remove page
-    When I click add button <addTimes>
-    And delete button <deleteTimes>
-    Then I validate amount of click buttons "<addTimes>" and "<deleteTimes>"
-
-    Examples:
-      | addTimes | deleteTimes |
-      | 9        | 5           |
-      #| 3        | 1           |
-
+    And I need to redirect to context menu page
+    When I make a context click in box
+    Then I validate the alert
